@@ -15,7 +15,7 @@ namespace Parcial_II___Grupo_5.DAL
         public SnacksDAL()
         {
             db = new Database();
-        }
+        } 
 
         public DataTable getAllSnacks()
         {

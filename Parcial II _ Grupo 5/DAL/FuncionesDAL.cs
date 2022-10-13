@@ -28,7 +28,7 @@ namespace Parcial_II___Grupo_5.DAL
                 using (SqlCommand cmd = con.CreateCommand())
                 {
                     cmd.CommandText = "SELECT * FROM Funciones";
-                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                    SqlDataAdapter adapter = new SqlDataAdapter(cmd); 
                     adapter.Fill(dt);
                     con.Close();
                     return dt;

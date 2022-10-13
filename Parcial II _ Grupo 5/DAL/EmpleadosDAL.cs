@@ -98,7 +98,7 @@ namespace Parcial_II___Grupo_5.DAL
             {
                 SqlConnection Con = db.getConnection();
                 using (SqlCommand cmd = Con.CreateCommand())
-                {
+                { 
                     Con.Open();
                     cmd.CommandText = "DELETE FROM Empleados WHERE id = @id;";
                     cmd.Parameters.AddWithValue("@id", emp.Id);

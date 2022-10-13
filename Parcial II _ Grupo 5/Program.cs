@@ -19,6 +19,9 @@ namespace Parcial_II___Grupo_5
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmEmpleados());
             Application.Run(new frmSalas());
+            Application.Run(new frmFunciones());
+            Application.Run(new frmCartelera());
+            Application.Run(new frmSnacks());
 
         }
     }
