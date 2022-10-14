@@ -40,11 +40,11 @@ namespace Parcial_II___Grupo_5.PL
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.txtAsientos_totales = new System.Windows.Forms.TextBox();
+            this.txtAsientos_ocupados = new System.Windows.Forms.TextBox();
+            this.txtId_empleados = new System.Windows.Forms.TextBox();
+            this.textHorarios_limpieza = new System.Windows.Forms.TextBox();
             this.cmbSalas = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.DgwSalas)).BeginInit();
             this.SuspendLayout();
@@ -78,7 +78,6 @@ namespace Parcial_II___Grupo_5.PL
             this.lbl3.Size = new System.Drawing.Size(81, 13);
             this.lbl3.TabIndex = 2;
             this.lbl3.Text = "Asientos totales";
-            this.lbl3.Click += new System.EventHandler(this.lbl3_Click);
             // 
             // lbl4
             // 
@@ -158,41 +157,40 @@ namespace Parcial_II___Grupo_5.PL
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtId
             // 
-            this.textBox1.Location = new System.Drawing.Point(15, 42);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(212, 20);
-            this.textBox1.TabIndex = 11;
+            this.txtId.Location = new System.Drawing.Point(15, 42);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(212, 20);
+            this.txtId.TabIndex = 11;
             // 
-            // textBox3
+            // txtAsientos_totales
             // 
-            this.textBox3.Location = new System.Drawing.Point(15, 126);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(212, 20);
-            this.textBox3.TabIndex = 13;
+            this.txtAsientos_totales.Location = new System.Drawing.Point(15, 126);
+            this.txtAsientos_totales.Name = "txtAsientos_totales";
+            this.txtAsientos_totales.Size = new System.Drawing.Size(212, 20);
+            this.txtAsientos_totales.TabIndex = 13;
             // 
-            // textBox4
+            // txtAsientos_ocupados
             // 
-            this.textBox4.Location = new System.Drawing.Point(278, 126);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(212, 20);
-            this.textBox4.TabIndex = 14;
+            this.txtAsientos_ocupados.Location = new System.Drawing.Point(278, 126);
+            this.txtAsientos_ocupados.Name = "txtAsientos_ocupados";
+            this.txtAsientos_ocupados.Size = new System.Drawing.Size(212, 20);
+            this.txtAsientos_ocupados.TabIndex = 14;
             // 
-            // textBox5
+            // txtId_empleados
             // 
-            this.textBox5.Location = new System.Drawing.Point(15, 214);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(212, 20);
-            this.textBox5.TabIndex = 15;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            this.txtId_empleados.Location = new System.Drawing.Point(15, 214);
+            this.txtId_empleados.Name = "txtId_empleados";
+            this.txtId_empleados.Size = new System.Drawing.Size(212, 20);
+            this.txtId_empleados.TabIndex = 15;
             // 
-            // textBox6
+            // textHorarios_limpieza
             // 
-            this.textBox6.Location = new System.Drawing.Point(278, 214);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(214, 20);
-            this.textBox6.TabIndex = 16;
+            this.textHorarios_limpieza.Location = new System.Drawing.Point(278, 214);
+            this.textHorarios_limpieza.Name = "textHorarios_limpieza";
+            this.textHorarios_limpieza.Size = new System.Drawing.Size(214, 20);
+            this.textHorarios_limpieza.TabIndex = 16;
             // 
             // cmbSalas
             // 
@@ -214,11 +212,11 @@ namespace Parcial_II___Grupo_5.PL
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(504, 522);
             this.Controls.Add(this.cmbSalas);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textHorarios_limpieza);
+            this.Controls.Add(this.txtId_empleados);
+            this.Controls.Add(this.txtAsientos_ocupados);
+            this.Controls.Add(this.txtAsientos_totales);
+            this.Controls.Add(this.txtId);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnActualizar);
@@ -251,11 +249,11 @@ namespace Parcial_II___Grupo_5.PL
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.TextBox txtAsientos_totales;
+        private System.Windows.Forms.TextBox txtAsientos_ocupados;
+        private System.Windows.Forms.TextBox txtId_empleados;
+        private System.Windows.Forms.TextBox textHorarios_limpieza;
         private System.Windows.Forms.ComboBox cmbSalas;
     }
 }

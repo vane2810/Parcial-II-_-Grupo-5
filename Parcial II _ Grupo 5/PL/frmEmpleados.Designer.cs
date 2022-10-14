@@ -119,7 +119,6 @@ namespace Parcial_II___Grupo_5
             this.txtCargo.Name = "txtCargo";
             this.txtCargo.Size = new System.Drawing.Size(192, 20);
             this.txtCargo.TabIndex = 8;
-            this.txtCargo.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // txtTeléfono
             // 

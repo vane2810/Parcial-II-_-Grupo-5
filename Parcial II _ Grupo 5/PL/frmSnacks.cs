@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace Parcial_II___Grupo_5.PL
 {
-    public partial class frmSalas : Form
+    public partial class frmSnacks : Form
     {
-        public frmSalas()
+        public frmSnacks()
         {
             InitializeComponent();
         }
-
     }
 }
