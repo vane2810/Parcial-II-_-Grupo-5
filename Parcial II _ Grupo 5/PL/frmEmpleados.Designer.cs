@@ -1,17 +1,17 @@
 ﻿
-namespace Parcial_II___Grupo_5
+namespace Parcial_II___Grupo_5.PL
 {
-    partial class Form1
+    partial class frmEmpleados
     {
         /// <summary>
-        /// Variable del diseñador necesaria.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Limpiar los recursos que se estén usando.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -21,11 +21,11 @@ namespace Parcial_II___Grupo_5
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de Windows Forms
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
@@ -37,20 +37,20 @@ namespace Parcial_II___Grupo_5
             this.txtId = new System.Windows.Forms.TextBox();
             this.txtNombres = new System.Windows.Forms.TextBox();
             this.txtApellidos = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
             this.txtCargo = new System.Windows.Forms.TextBox();
-            this.txtTeléfono = new System.Windows.Forms.TextBox();
             this.btnInsertar = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
-            this.DgvEmpleados = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvEmpleados)).BeginInit();
+            this.DgwEmpleados = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.DgwEmpleados)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl1
             // 
             this.lbl1.AutoSize = true;
-            this.lbl1.Location = new System.Drawing.Point(21, 34);
+            this.lbl1.Location = new System.Drawing.Point(40, 25);
             this.lbl1.Name = "lbl1";
             this.lbl1.Size = new System.Drawing.Size(16, 13);
             this.lbl1.TabIndex = 0;
@@ -59,7 +59,7 @@ namespace Parcial_II___Grupo_5
             // lbl2
             // 
             this.lbl2.AutoSize = true;
-            this.lbl2.Location = new System.Drawing.Point(21, 94);
+            this.lbl2.Location = new System.Drawing.Point(40, 80);
             this.lbl2.Name = "lbl2";
             this.lbl2.Size = new System.Drawing.Size(49, 13);
             this.lbl2.TabIndex = 1;
@@ -68,7 +68,7 @@ namespace Parcial_II___Grupo_5
             // lbl3
             // 
             this.lbl3.AutoSize = true;
-            this.lbl3.Location = new System.Drawing.Point(21, 146);
+            this.lbl3.Location = new System.Drawing.Point(40, 132);
             this.lbl3.Name = "lbl3";
             this.lbl3.Size = new System.Drawing.Size(49, 13);
             this.lbl3.TabIndex = 2;
@@ -77,7 +77,7 @@ namespace Parcial_II___Grupo_5
             // lbl4
             // 
             this.lbl4.AutoSize = true;
-            this.lbl4.Location = new System.Drawing.Point(86, 182);
+            this.lbl4.Location = new System.Drawing.Point(99, 185);
             this.lbl4.Name = "lbl4";
             this.lbl4.Size = new System.Drawing.Size(35, 13);
             this.lbl4.TabIndex = 3;
@@ -86,7 +86,7 @@ namespace Parcial_II___Grupo_5
             // lbl5
             // 
             this.lbl5.AutoSize = true;
-            this.lbl5.Location = new System.Drawing.Point(306, 182);
+            this.lbl5.Location = new System.Drawing.Point(341, 185);
             this.lbl5.Name = "lbl5";
             this.lbl5.Size = new System.Drawing.Size(49, 13);
             this.lbl5.TabIndex = 4;
@@ -94,42 +94,42 @@ namespace Parcial_II___Grupo_5
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(78, 34);
+            this.txtId.Location = new System.Drawing.Point(138, 22);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(350, 20);
+            this.txtId.Size = new System.Drawing.Size(316, 20);
             this.txtId.TabIndex = 5;
             // 
             // txtNombres
             // 
-            this.txtNombres.Location = new System.Drawing.Point(78, 91);
+            this.txtNombres.Location = new System.Drawing.Point(138, 73);
             this.txtNombres.Name = "txtNombres";
-            this.txtNombres.Size = new System.Drawing.Size(350, 20);
+            this.txtNombres.Size = new System.Drawing.Size(316, 20);
             this.txtNombres.TabIndex = 6;
             // 
             // txtApellidos
             // 
-            this.txtApellidos.Location = new System.Drawing.Point(78, 139);
+            this.txtApellidos.Location = new System.Drawing.Point(138, 125);
             this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.Size = new System.Drawing.Size(350, 20);
+            this.txtApellidos.Size = new System.Drawing.Size(316, 20);
             this.txtApellidos.TabIndex = 7;
+            // 
+            // txtTelefono
+            // 
+            this.txtTelefono.Location = new System.Drawing.Point(251, 217);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(203, 20);
+            this.txtTelefono.TabIndex = 8;
             // 
             // txtCargo
             // 
-            this.txtCargo.Location = new System.Drawing.Point(24, 219);
+            this.txtCargo.Location = new System.Drawing.Point(30, 217);
             this.txtCargo.Name = "txtCargo";
-            this.txtCargo.Size = new System.Drawing.Size(192, 20);
-            this.txtCargo.TabIndex = 8;
-            // 
-            // txtTeléfono
-            // 
-            this.txtTeléfono.Location = new System.Drawing.Point(236, 219);
-            this.txtTeléfono.Name = "txtTeléfono";
-            this.txtTeléfono.Size = new System.Drawing.Size(192, 20);
-            this.txtTeléfono.TabIndex = 9;
+            this.txtCargo.Size = new System.Drawing.Size(203, 20);
+            this.txtCargo.TabIndex = 9;
             // 
             // btnInsertar
             // 
-            this.btnInsertar.Location = new System.Drawing.Point(24, 272);
+            this.btnInsertar.Location = new System.Drawing.Point(30, 266);
             this.btnInsertar.Name = "btnInsertar";
             this.btnInsertar.Size = new System.Drawing.Size(75, 23);
             this.btnInsertar.TabIndex = 10;
@@ -138,7 +138,7 @@ namespace Parcial_II___Grupo_5
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(141, 272);
+            this.btnActualizar.Location = new System.Drawing.Point(138, 266);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(75, 23);
             this.btnActualizar.TabIndex = 11;
@@ -147,7 +147,7 @@ namespace Parcial_II___Grupo_5
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(243, 272);
+            this.btnEliminar.Location = new System.Drawing.Point(263, 266);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 23);
             this.btnEliminar.TabIndex = 12;
@@ -156,33 +156,33 @@ namespace Parcial_II___Grupo_5
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(353, 272);
+            this.btnCerrar.Location = new System.Drawing.Point(379, 266);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(75, 23);
             this.btnCerrar.TabIndex = 13;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = true;
             // 
-            // DgvEmpleados
+            // DgwEmpleados
             // 
-            this.DgvEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvEmpleados.Location = new System.Drawing.Point(24, 313);
-            this.DgvEmpleados.Name = "DgvEmpleados";
-            this.DgvEmpleados.Size = new System.Drawing.Size(404, 193);
-            this.DgvEmpleados.TabIndex = 14;
+            this.DgwEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgwEmpleados.Location = new System.Drawing.Point(30, 305);
+            this.DgwEmpleados.Name = "DgwEmpleados";
+            this.DgwEmpleados.Size = new System.Drawing.Size(424, 218);
+            this.DgwEmpleados.TabIndex = 14;
             // 
-            // Form1
+            // frmEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(454, 518);
-            this.Controls.Add(this.DgvEmpleados);
+            this.ClientSize = new System.Drawing.Size(475, 535);
+            this.Controls.Add(this.DgwEmpleados);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnInsertar);
-            this.Controls.Add(this.txtTeléfono);
             this.Controls.Add(this.txtCargo);
+            this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.txtApellidos);
             this.Controls.Add(this.txtNombres);
             this.Controls.Add(this.txtId);
@@ -191,10 +191,9 @@ namespace Parcial_II___Grupo_5
             this.Controls.Add(this.lbl3);
             this.Controls.Add(this.lbl2);
             this.Controls.Add(this.lbl1);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.DgvEmpleados)).EndInit();
+            this.Name = "frmEmpleados";
+            this.Text = "frmEmpleados";
+            ((System.ComponentModel.ISupportInitialize)(this.DgwEmpleados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,13 +209,12 @@ namespace Parcial_II___Grupo_5
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.TextBox txtNombres;
         private System.Windows.Forms.TextBox txtApellidos;
+        private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.TextBox txtCargo;
-        private System.Windows.Forms.TextBox txtTeléfono;
         private System.Windows.Forms.Button btnInsertar;
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.DataGridView DgvEmpleados;
+        private System.Windows.Forms.DataGridView DgwEmpleados;
     }
 }
-
