@@ -56,6 +56,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>cineDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DAL\CarteleraDAL.cs" />
+    <Compile Include="DAL\Database.cs" />
+    <Compile Include="DAL\EmpleadosDAL.cs" />
+    <Compile Include="DAL\FuncionesDAL.cs" />
+    <Compile Include="DAL\SalasDAL.cs" />
+    <Compile Include="DAL\SnacksDAL.cs" />
     <Compile Include="PL\frmEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,8 +142,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DAL\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
