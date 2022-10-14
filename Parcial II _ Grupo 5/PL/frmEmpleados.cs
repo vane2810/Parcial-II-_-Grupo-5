@@ -1,18 +1,19 @@
-﻿using System;
+﻿using Parcial_II___Grupo_5.Properties;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Parcial_II___Grupo_5
 {
     public partial class Form1 : Form
     {
-        SedesDAL sedes;
+        EmpleadosDAL empleados;
+
+            
         
 
         public frmEmpleados()
@@ -39,9 +40,9 @@ namespace Parcial_II___Grupo_5
             cmbCargo.SelectedValue = 0;
         }
 
-        private void fillDgvEmpleados()
+        private void DgvEmpleados()
         {
-            dgvEmpleados.DataSource = empleados.getAllEmpleados();
+           DgvEmpleados.DataSource = empleados.getAllEmpleados();
         }
 
         private void clearTextBox()
