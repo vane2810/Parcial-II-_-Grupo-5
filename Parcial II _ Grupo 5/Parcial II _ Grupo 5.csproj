@@ -62,6 +62,12 @@
     <Compile Include="PL\frmEmpleados.Designer.cs">
       <DependentUpon>frmEmpleados.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\frmCartelera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmCartelera.Designer.cs">
+      <DependentUpon>frmCartelera.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\frmSalas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="PL\frmEmpleados.resx">
       <DependentUpon>frmEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmCartelera.resx">
+      <DependentUpon>frmCartelera.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\frmSalas.resx">
       <DependentUpon>frmSalas.cs</DependentUpon>
