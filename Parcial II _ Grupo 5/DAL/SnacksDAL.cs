@@ -34,7 +34,7 @@ namespace Parcial_II___Grupo_5.DAL
                 }
             }
             catch
-            {
+            { 
                 return dt;
             }
         }

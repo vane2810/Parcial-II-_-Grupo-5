@@ -19,7 +19,7 @@ namespace Parcial_II___Grupo_5.DAL
         }
 
         public DataTable getAllSalas()
-        {
+        { 
             DataTable dt = new DataTable();
             try 
             {
