@@ -193,6 +193,7 @@ namespace Parcial_II___Grupo_5.PL
             this.Controls.Add(this.lbl1);
             this.Name = "frmEmpleados";
             this.Text = "frmEmpleados";
+            this.Load += new System.EventHandler(this.frmEmpleados_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgwEmpleados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
