@@ -15,6 +15,11 @@ namespace Parcial_II___Grupo_5.BLL
         private double ganancias_diarias;
         private double ganancias_totales;
 
+        public CarteleraBLL(int id_funciones)
+        {
+            this.id_funciones = id_funciones;
+        }
+
         public CarteleraBLL(int id_funciones, string nombre_pelicula = null, string periodo_pelicula = null, double ganancias_funcion = 0, double ganancias_diarias = 0, double ganancias_totales = 0)
         {
             this.Id_funciones = id_funciones;

@@ -44,13 +44,15 @@ namespace Parcial_II___Grupo_5.PL
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.lbl0 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DgwSnacks)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl1
             // 
             this.lbl1.AutoSize = true;
-            this.lbl1.Location = new System.Drawing.Point(38, 36);
+            this.lbl1.Location = new System.Drawing.Point(37, 51);
             this.lbl1.Name = "lbl1";
             this.lbl1.Size = new System.Drawing.Size(50, 13);
             this.lbl1.TabIndex = 0;
@@ -59,7 +61,7 @@ namespace Parcial_II___Grupo_5.PL
             // lbl2
             // 
             this.lbl2.AutoSize = true;
-            this.lbl2.Location = new System.Drawing.Point(38, 92);
+            this.lbl2.Location = new System.Drawing.Point(38, 95);
             this.lbl2.Name = "lbl2";
             this.lbl2.Size = new System.Drawing.Size(37, 13);
             this.lbl2.TabIndex = 1;
@@ -94,14 +96,14 @@ namespace Parcial_II___Grupo_5.PL
             // 
             // txtProducto
             // 
-            this.txtProducto.Location = new System.Drawing.Point(132, 36);
+            this.txtProducto.Location = new System.Drawing.Point(132, 48);
             this.txtProducto.Name = "txtProducto";
             this.txtProducto.Size = new System.Drawing.Size(366, 20);
             this.txtProducto.TabIndex = 5;
             // 
             // txtMarca
             // 
-            this.txtMarca.Location = new System.Drawing.Point(132, 84);
+            this.txtMarca.Location = new System.Drawing.Point(132, 92);
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(366, 20);
             this.txtMarca.TabIndex = 6;
@@ -171,11 +173,29 @@ namespace Parcial_II___Grupo_5.PL
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = true;
             // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(132, 7);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(100, 20);
+            this.txtId.TabIndex = 16;
+            // 
+            // lbl0
+            // 
+            this.lbl0.AutoSize = true;
+            this.lbl0.Location = new System.Drawing.Point(40, 14);
+            this.lbl0.Name = "lbl0";
+            this.lbl0.Size = new System.Drawing.Size(16, 13);
+            this.lbl0.TabIndex = 17;
+            this.lbl0.Text = "Id";
+            // 
             // frmSnacks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(510, 470);
+            this.Controls.Add(this.lbl0);
+            this.Controls.Add(this.txtId);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnAgregar);
@@ -216,5 +236,7 @@ namespace Parcial_II___Grupo_5.PL
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.Label lbl0;
     }
 }

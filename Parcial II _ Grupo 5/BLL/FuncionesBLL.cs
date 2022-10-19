@@ -9,7 +9,6 @@ namespace Parcial_II___Grupo_5.BLL
     public class FuncionesBLL
     {
         private int id;
-        private int id_salas;
         private int entrada_adultos;
         private int entrada_niños;
         private int entrada_estudiantes;
@@ -21,7 +20,7 @@ namespace Parcial_II___Grupo_5.BLL
             Id = id;
         }
 
-        public FuncionesBLL(int id, int id_salas, int entrada_adultos, int entrada_niños, int entrada_estudiantes, string duracion_pelicula, int funciones_diarias)
+        public FuncionesBLL(int id, int entrada_adultos, int entrada_niños, int entrada_estudiantes, string duracion_pelicula, int funciones_diarias)
         {
             this.id = id;
             this.entrada_adultos = entrada_adultos;
