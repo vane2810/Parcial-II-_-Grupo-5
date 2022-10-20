@@ -39,14 +39,14 @@ namespace Parcial_II___Grupo_5.PL
             this.txtCompra = new System.Windows.Forms.TextBox();
             this.txtVenta = new System.Windows.Forms.TextBox();
             this.txtCantidad = new System.Windows.Forms.TextBox();
-            this.DgwSnacks = new System.Windows.Forms.DataGridView();
-            this.btnInsertar = new System.Windows.Forms.Button();
-            this.btnAgregar = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.btnCerrar = new System.Windows.Forms.Button();
+            this.dgvSnacks = new System.Windows.Forms.DataGridView();
+            this.btnInsert = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.txtId = new System.Windows.Forms.TextBox();
             this.lbl0 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.DgwSnacks)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSnacks)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl1
@@ -129,49 +129,50 @@ namespace Parcial_II___Grupo_5.PL
             this.txtCantidad.Size = new System.Drawing.Size(132, 20);
             this.txtCantidad.TabIndex = 9;
             // 
-            // DgwSnacks
+            // dgvSnacks
             // 
-            this.DgwSnacks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgwSnacks.Location = new System.Drawing.Point(105, 213);
-            this.DgwSnacks.Name = "DgwSnacks";
-            this.DgwSnacks.Size = new System.Drawing.Size(393, 245);
-            this.DgwSnacks.TabIndex = 10;
+            this.dgvSnacks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSnacks.Location = new System.Drawing.Point(105, 213);
+            this.dgvSnacks.Name = "dgvSnacks";
+            this.dgvSnacks.Size = new System.Drawing.Size(393, 245);
+            this.dgvSnacks.TabIndex = 10;
+            this.dgvSnacks.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvSnacks_CellContentClick);
             // 
-            // btnInsertar
+            // btnInsert
             // 
-            this.btnInsertar.Location = new System.Drawing.Point(12, 237);
-            this.btnInsertar.Name = "btnInsertar";
-            this.btnInsertar.Size = new System.Drawing.Size(75, 23);
-            this.btnInsertar.TabIndex = 11;
-            this.btnInsertar.Text = "Insertar";
-            this.btnInsertar.UseVisualStyleBackColor = true;
+            this.btnInsert.Location = new System.Drawing.Point(12, 237);
+            this.btnInsert.Name = "btnInsert";
+            this.btnInsert.Size = new System.Drawing.Size(75, 23);
+            this.btnInsert.TabIndex = 11;
+            this.btnInsert.Text = "Insertar";
+            this.btnInsert.UseVisualStyleBackColor = true;
             // 
-            // btnAgregar
+            // btnUpdate
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(12, 306);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
-            this.btnAgregar.TabIndex = 12;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnUpdate.Location = new System.Drawing.Point(12, 306);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 12;
+            this.btnUpdate.Text = "Actualizar";
+            this.btnUpdate.UseVisualStyleBackColor = true;
             // 
-            // btnEliminar
+            // btnDelete
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(12, 368);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
-            this.btnEliminar.TabIndex = 13;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnDelete.Location = new System.Drawing.Point(12, 368);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 13;
+            this.btnDelete.Text = "Eliminar";
+            this.btnDelete.UseVisualStyleBackColor = true;
             // 
-            // btnCerrar
+            // btnClose
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(12, 434);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(75, 23);
-            this.btnCerrar.TabIndex = 14;
-            this.btnCerrar.Text = "Cerrar";
-            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnClose.Location = new System.Drawing.Point(12, 434);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(75, 23);
+            this.btnClose.TabIndex = 14;
+            this.btnClose.Text = "Cerrar";
+            this.btnClose.UseVisualStyleBackColor = true;
             // 
             // txtId
             // 
@@ -196,11 +197,11 @@ namespace Parcial_II___Grupo_5.PL
             this.ClientSize = new System.Drawing.Size(510, 470);
             this.Controls.Add(this.lbl0);
             this.Controls.Add(this.txtId);
-            this.Controls.Add(this.btnCerrar);
-            this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.btnInsertar);
-            this.Controls.Add(this.DgwSnacks);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnInsert);
+            this.Controls.Add(this.dgvSnacks);
             this.Controls.Add(this.txtCantidad);
             this.Controls.Add(this.txtVenta);
             this.Controls.Add(this.txtCompra);
@@ -213,7 +214,7 @@ namespace Parcial_II___Grupo_5.PL
             this.Controls.Add(this.lbl1);
             this.Name = "frmSnacks";
             this.Text = "frmSnacks";
-            ((System.ComponentModel.ISupportInitialize)(this.DgwSnacks)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSnacks)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -231,12 +232,12 @@ namespace Parcial_II___Grupo_5.PL
         private System.Windows.Forms.TextBox txtCompra;
         private System.Windows.Forms.TextBox txtVenta;
         private System.Windows.Forms.TextBox txtCantidad;
-        private System.Windows.Forms.DataGridView DgwSnacks;
-        private System.Windows.Forms.Button btnInsertar;
-        private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Button btnInsert;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label lbl0;
+        public System.Windows.Forms.DataGridView dgvSnacks;
     }
 }

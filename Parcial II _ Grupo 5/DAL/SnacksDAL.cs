@@ -1,4 +1,4 @@
-﻿using Parcial_II___Grupo_5.Properties;
+﻿
 using Parcial_II___Grupo_5.BLL;
 using System;
 using System.Collections.Generic;
