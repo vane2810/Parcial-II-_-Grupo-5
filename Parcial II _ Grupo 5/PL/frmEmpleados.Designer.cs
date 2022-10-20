@@ -43,8 +43,8 @@ namespace Parcial_II___Grupo_5.PL
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
-            this.DgwEmpleados = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.DgwEmpleados)).BeginInit();
+            this.DgvEmpleados = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvEmpleados)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl1
@@ -163,20 +163,20 @@ namespace Parcial_II___Grupo_5.PL
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = true;
             // 
-            // DgwEmpleados
+            // DgvEmpleados
             // 
-            this.DgwEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgwEmpleados.Location = new System.Drawing.Point(30, 305);
-            this.DgwEmpleados.Name = "DgwEmpleados";
-            this.DgwEmpleados.Size = new System.Drawing.Size(424, 218);
-            this.DgwEmpleados.TabIndex = 14;
+            this.DgvEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvEmpleados.Location = new System.Drawing.Point(30, 305);
+            this.DgvEmpleados.Name = "DgvEmpleados";
+            this.DgvEmpleados.Size = new System.Drawing.Size(424, 218);
+            this.DgvEmpleados.TabIndex = 14;
             // 
             // frmEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(475, 535);
-            this.Controls.Add(this.DgwEmpleados);
+            this.Controls.Add(this.DgvEmpleados);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnActualizar);
@@ -194,7 +194,7 @@ namespace Parcial_II___Grupo_5.PL
             this.Name = "frmEmpleados";
             this.Text = "frmEmpleados";
             this.Load += new System.EventHandler(this.frmEmpleados_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.DgwEmpleados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvEmpleados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,6 +216,6 @@ namespace Parcial_II___Grupo_5.PL
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.DataGridView DgwEmpleados;
+        private System.Windows.Forms.DataGridView DgvEmpleados;
     }
 }
