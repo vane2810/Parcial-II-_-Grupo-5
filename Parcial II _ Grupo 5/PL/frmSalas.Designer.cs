@@ -53,9 +53,10 @@ namespace Parcial_II___Grupo_5.PL
             // 
             this.lbl1.AutoSize = true;
             this.lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl1.Location = new System.Drawing.Point(110, 9);
+            this.lbl1.Location = new System.Drawing.Point(147, 11);
+            this.lbl1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(16, 13);
+            this.lbl1.Size = new System.Drawing.Size(19, 17);
             this.lbl1.TabIndex = 0;
             this.lbl1.Text = "Id";
             // 
@@ -63,9 +64,10 @@ namespace Parcial_II___Grupo_5.PL
             // 
             this.lbl2.AutoSize = true;
             this.lbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2.Location = new System.Drawing.Point(369, 9);
+            this.lbl2.Location = new System.Drawing.Point(492, 11);
+            this.lbl2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(28, 13);
+            this.lbl2.Size = new System.Drawing.Size(36, 17);
             this.lbl2.TabIndex = 1;
             this.lbl2.Text = "Sala";
             // 
@@ -73,9 +75,10 @@ namespace Parcial_II___Grupo_5.PL
             // 
             this.lbl3.AutoSize = true;
             this.lbl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3.Location = new System.Drawing.Point(78, 94);
+            this.lbl3.Location = new System.Drawing.Point(104, 116);
+            this.lbl3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl3.Name = "lbl3";
-            this.lbl3.Size = new System.Drawing.Size(81, 13);
+            this.lbl3.Size = new System.Drawing.Size(108, 17);
             this.lbl3.TabIndex = 2;
             this.lbl3.Text = "Asientos totales";
             // 
@@ -83,9 +86,10 @@ namespace Parcial_II___Grupo_5.PL
             // 
             this.lbl4.AutoSize = true;
             this.lbl4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4.Location = new System.Drawing.Point(348, 94);
+            this.lbl4.Location = new System.Drawing.Point(464, 116);
+            this.lbl4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl4.Name = "lbl4";
-            this.lbl4.Size = new System.Drawing.Size(97, 13);
+            this.lbl4.Size = new System.Drawing.Size(128, 17);
             this.lbl4.TabIndex = 3;
             this.lbl4.Text = "Asientos ocupados";
             // 
@@ -93,9 +97,10 @@ namespace Parcial_II___Grupo_5.PL
             // 
             this.lbl5.AutoSize = true;
             this.lbl5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl5.Location = new System.Drawing.Point(89, 177);
+            this.lbl5.Location = new System.Drawing.Point(119, 218);
+            this.lbl5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl5.Name = "lbl5";
-            this.lbl5.Size = new System.Drawing.Size(70, 13);
+            this.lbl5.Size = new System.Drawing.Size(92, 17);
             this.lbl5.TabIndex = 4;
             this.lbl5.Text = "Id empleados";
             // 
@@ -103,26 +108,30 @@ namespace Parcial_II___Grupo_5.PL
             // 
             this.lbl6.AutoSize = true;
             this.lbl6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl6.Location = new System.Drawing.Point(348, 177);
+            this.lbl6.Location = new System.Drawing.Point(464, 218);
+            this.lbl6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl6.Name = "lbl6";
-            this.lbl6.Size = new System.Drawing.Size(86, 13);
+            this.lbl6.Size = new System.Drawing.Size(117, 17);
             this.lbl6.TabIndex = 5;
             this.lbl6.Text = "Horarios limpieza";
             // 
             // dgvSalas
             // 
             this.dgvSalas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSalas.Location = new System.Drawing.Point(15, 249);
+            this.dgvSalas.Location = new System.Drawing.Point(20, 306);
+            this.dgvSalas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvSalas.Name = "dgvSalas";
-            this.dgvSalas.Size = new System.Drawing.Size(475, 221);
+            this.dgvSalas.RowHeadersWidth = 51;
+            this.dgvSalas.Size = new System.Drawing.Size(633, 272);
             this.dgvSalas.TabIndex = 6;
             // 
             // btnInsert
             // 
             this.btnInsert.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInsert.Location = new System.Drawing.Point(15, 487);
+            this.btnInsert.Location = new System.Drawing.Point(20, 599);
+            this.btnInsert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(75, 23);
+            this.btnInsert.Size = new System.Drawing.Size(100, 28);
             this.btnInsert.TabIndex = 7;
             this.btnInsert.Text = "Insertar";
             this.btnInsert.UseVisualStyleBackColor = true;
@@ -130,9 +139,10 @@ namespace Parcial_II___Grupo_5.PL
             // btnUpdate
             // 
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(152, 487);
+            this.btnUpdate.Location = new System.Drawing.Point(203, 599);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.Size = new System.Drawing.Size(100, 28);
             this.btnUpdate.TabIndex = 8;
             this.btnUpdate.Text = "Actualizar";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -140,9 +150,10 @@ namespace Parcial_II___Grupo_5.PL
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(286, 487);
+            this.btnDelete.Location = new System.Drawing.Point(381, 599);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.Size = new System.Drawing.Size(100, 28);
             this.btnDelete.TabIndex = 9;
             this.btnDelete.Text = "Eliminar";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -150,60 +161,68 @@ namespace Parcial_II___Grupo_5.PL
             // btnClose
             // 
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(415, 487);
+            this.btnClose.Location = new System.Drawing.Point(553, 599);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 23);
+            this.btnClose.Size = new System.Drawing.Size(100, 28);
             this.btnClose.TabIndex = 10;
             this.btnClose.Text = "Cerrar";
             this.btnClose.UseVisualStyleBackColor = true;
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(15, 42);
+            this.txtId.Location = new System.Drawing.Point(20, 52);
+            this.txtId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(212, 20);
+            this.txtId.Size = new System.Drawing.Size(281, 22);
             this.txtId.TabIndex = 11;
             // 
             // txtAsientos_totales
             // 
-            this.txtAsientos_totales.Location = new System.Drawing.Point(15, 126);
+            this.txtAsientos_totales.Location = new System.Drawing.Point(20, 155);
+            this.txtAsientos_totales.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtAsientos_totales.Name = "txtAsientos_totales";
-            this.txtAsientos_totales.Size = new System.Drawing.Size(212, 20);
+            this.txtAsientos_totales.Size = new System.Drawing.Size(281, 22);
             this.txtAsientos_totales.TabIndex = 13;
             // 
             // txtAsientos_ocupados
             // 
-            this.txtAsientos_ocupados.Location = new System.Drawing.Point(278, 126);
+            this.txtAsientos_ocupados.Location = new System.Drawing.Point(371, 155);
+            this.txtAsientos_ocupados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtAsientos_ocupados.Name = "txtAsientos_ocupados";
-            this.txtAsientos_ocupados.Size = new System.Drawing.Size(212, 20);
+            this.txtAsientos_ocupados.Size = new System.Drawing.Size(281, 22);
             this.txtAsientos_ocupados.TabIndex = 14;
             // 
             // txtId_empleados
             // 
-            this.txtId_empleados.Location = new System.Drawing.Point(15, 214);
+            this.txtId_empleados.Location = new System.Drawing.Point(20, 263);
+            this.txtId_empleados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtId_empleados.Name = "txtId_empleados";
-            this.txtId_empleados.Size = new System.Drawing.Size(212, 20);
+            this.txtId_empleados.Size = new System.Drawing.Size(281, 22);
             this.txtId_empleados.TabIndex = 15;
             // 
             // txtHorario_limpieza
             // 
-            this.txtHorario_limpieza.Location = new System.Drawing.Point(278, 214);
+            this.txtHorario_limpieza.Location = new System.Drawing.Point(371, 263);
+            this.txtHorario_limpieza.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtHorario_limpieza.Name = "txtHorario_limpieza";
-            this.txtHorario_limpieza.Size = new System.Drawing.Size(214, 20);
+            this.txtHorario_limpieza.Size = new System.Drawing.Size(284, 22);
             this.txtHorario_limpieza.TabIndex = 16;
             // 
             // txtSala
             // 
-            this.txtSala.Location = new System.Drawing.Point(278, 42);
+            this.txtSala.Location = new System.Drawing.Point(371, 52);
+            this.txtSala.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSala.Name = "txtSala";
-            this.txtSala.Size = new System.Drawing.Size(212, 20);
+            this.txtSala.Size = new System.Drawing.Size(281, 22);
             this.txtSala.TabIndex = 17;
             // 
             // frmSalas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(504, 522);
+            this.BackColor = System.Drawing.Color.Linen;
+            this.ClientSize = new System.Drawing.Size(672, 642);
             this.Controls.Add(this.txtSala);
             this.Controls.Add(this.txtHorario_limpieza);
             this.Controls.Add(this.txtId_empleados);
@@ -221,6 +240,7 @@ namespace Parcial_II___Grupo_5.PL
             this.Controls.Add(this.lbl3);
             this.Controls.Add(this.lbl2);
             this.Controls.Add(this.lbl1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmSalas";
             this.Text = "frmSalas";
             ((System.ComponentModel.ISupportInitialize)(this.dgvSalas)).EndInit();
