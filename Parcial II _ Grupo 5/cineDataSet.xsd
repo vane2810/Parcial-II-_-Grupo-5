@@ -102,7 +102,7 @@ SELECT id, nombres, apellidos, cargo, salario FROM Empleados WHERE (id = @id)</C
               <Mapping SourceColumn="nombres" DataSetColumn="nombres" />
               <Mapping SourceColumn="apellidos" DataSetColumn="apellidos" />
               <Mapping SourceColumn="cargo" DataSetColumn="cargo" />
-              <Mapping SourceColumn="salario" DataSetColumn="salario" />
+              <Mapping SourceColumn="salario" DataSetColumn="telefono" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -289,7 +289,7 @@ SELECT id, numero_sala, asientos_totales, asientos_ocupados, id_empleados, horar
   <xs:element name="cineDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="cineDataSet" msprop:Generator_UserDSName="cineDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Cartelera" msprop:Generator_TableClassName="CarteleraDataTable" msprop:Generator_TableVarName="tableCartelera" msprop:Generator_TablePropName="Cartelera" msprop:Generator_RowDeletingName="CarteleraRowDeleting" msprop:Generator_RowChangingName="CarteleraRowChanging" msprop:Generator_RowEvHandlerName="CarteleraRowChangeEventHandler" msprop:Generator_RowDeletedName="CarteleraRowDeleted" msprop:Generator_UserTableName="Cartelera" msprop:Generator_RowChangedName="CarteleraRowChanged" msprop:Generator_RowEvArgName="CarteleraRowChangeEvent" msprop:Generator_RowClassName="CarteleraRow">
+        <xs:element name="Cartelera" msprop:Generator_TableClassName="CarteleraDataTable" msprop:Generator_TableVarName="tableCartelera" msprop:Generator_RowChangedName="CarteleraRowChanged" msprop:Generator_TablePropName="Cartelera" msprop:Generator_RowDeletingName="CarteleraRowDeleting" msprop:Generator_RowChangingName="CarteleraRowChanging" msprop:Generator_RowEvHandlerName="CarteleraRowChangeEventHandler" msprop:Generator_RowDeletedName="CarteleraRowDeleted" msprop:Generator_RowClassName="CarteleraRow" msprop:Generator_UserTableName="Cartelera" msprop:Generator_RowEvArgName="CarteleraRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id_funciones" msprop:Generator_ColumnVarNameInTable="columnid_funciones" msprop:Generator_ColumnPropNameInRow="id_funciones" msprop:Generator_ColumnPropNameInTable="id_funcionesColumn" msprop:Generator_UserColumnName="id_funciones" type="xs:int" />
@@ -313,7 +313,7 @@ SELECT id, numero_sala, asientos_totales, asientos_ocupados, id_empleados, horar
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Empleados" msprop:Generator_TableClassName="EmpleadosDataTable" msprop:Generator_TableVarName="tableEmpleados" msprop:Generator_TablePropName="Empleados" msprop:Generator_RowDeletingName="EmpleadosRowDeleting" msprop:Generator_RowChangingName="EmpleadosRowChanging" msprop:Generator_RowEvHandlerName="EmpleadosRowChangeEventHandler" msprop:Generator_RowDeletedName="EmpleadosRowDeleted" msprop:Generator_UserTableName="Empleados" msprop:Generator_RowChangedName="EmpleadosRowChanged" msprop:Generator_RowEvArgName="EmpleadosRowChangeEvent" msprop:Generator_RowClassName="EmpleadosRow">
+        <xs:element name="Empleados" msprop:Generator_TableClassName="EmpleadosDataTable" msprop:Generator_TableVarName="tableEmpleados" msprop:Generator_RowChangedName="EmpleadosRowChanged" msprop:Generator_TablePropName="Empleados" msprop:Generator_RowDeletingName="EmpleadosRowDeleting" msprop:Generator_RowChangingName="EmpleadosRowChanging" msprop:Generator_RowEvHandlerName="EmpleadosRowChangeEventHandler" msprop:Generator_RowDeletedName="EmpleadosRowDeleted" msprop:Generator_RowClassName="EmpleadosRow" msprop:Generator_UserTableName="Empleados" msprop:Generator_RowEvArgName="EmpleadosRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -338,11 +338,11 @@ SELECT id, numero_sala, asientos_totales, asientos_ocupados, id_empleados, horar
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="salario" msprop:Generator_ColumnVarNameInTable="columnsalario" msprop:Generator_ColumnPropNameInRow="salario" msprop:Generator_ColumnPropNameInTable="salarioColumn" msprop:Generator_UserColumnName="salario" type="xs:decimal" minOccurs="0" />
+              <xs:element name="telefono" msprop:Generator_ColumnVarNameInTable="columntelefono" msprop:Generator_ColumnPropNameInRow="telefono" msprop:Generator_ColumnPropNameInTable="telefonoColumn" msprop:Generator_UserColumnName="telefono" type="xs:decimal" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Funciones" msprop:Generator_TableClassName="FuncionesDataTable" msprop:Generator_TableVarName="tableFunciones" msprop:Generator_TablePropName="Funciones" msprop:Generator_RowDeletingName="FuncionesRowDeleting" msprop:Generator_RowChangingName="FuncionesRowChanging" msprop:Generator_RowEvHandlerName="FuncionesRowChangeEventHandler" msprop:Generator_RowDeletedName="FuncionesRowDeleted" msprop:Generator_UserTableName="Funciones" msprop:Generator_RowChangedName="FuncionesRowChanged" msprop:Generator_RowEvArgName="FuncionesRowChangeEvent" msprop:Generator_RowClassName="FuncionesRow">
+        <xs:element name="Funciones" msprop:Generator_TableClassName="FuncionesDataTable" msprop:Generator_TableVarName="tableFunciones" msprop:Generator_RowChangedName="FuncionesRowChanged" msprop:Generator_TablePropName="Funciones" msprop:Generator_RowDeletingName="FuncionesRowDeleting" msprop:Generator_RowChangingName="FuncionesRowChanging" msprop:Generator_RowEvHandlerName="FuncionesRowChangeEventHandler" msprop:Generator_RowDeletedName="FuncionesRowDeleted" msprop:Generator_RowClassName="FuncionesRow" msprop:Generator_UserTableName="Funciones" msprop:Generator_RowEvArgName="FuncionesRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -361,7 +361,7 @@ SELECT id, numero_sala, asientos_totales, asientos_ocupados, id_empleados, horar
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Salas" msprop:Generator_TableClassName="SalasDataTable" msprop:Generator_TableVarName="tableSalas" msprop:Generator_TablePropName="Salas" msprop:Generator_RowDeletingName="SalasRowDeleting" msprop:Generator_RowChangingName="SalasRowChanging" msprop:Generator_RowEvHandlerName="SalasRowChangeEventHandler" msprop:Generator_RowDeletedName="SalasRowDeleted" msprop:Generator_UserTableName="Salas" msprop:Generator_RowChangedName="SalasRowChanged" msprop:Generator_RowEvArgName="SalasRowChangeEvent" msprop:Generator_RowClassName="SalasRow">
+        <xs:element name="Salas" msprop:Generator_TableClassName="SalasDataTable" msprop:Generator_TableVarName="tableSalas" msprop:Generator_RowChangedName="SalasRowChanged" msprop:Generator_TablePropName="Salas" msprop:Generator_RowDeletingName="SalasRowDeleting" msprop:Generator_RowChangingName="SalasRowChanging" msprop:Generator_RowEvHandlerName="SalasRowChangeEventHandler" msprop:Generator_RowDeletedName="SalasRowDeleted" msprop:Generator_RowClassName="SalasRow" msprop:Generator_UserTableName="Salas" msprop:Generator_RowEvArgName="SalasRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -379,7 +379,7 @@ SELECT id, numero_sala, asientos_totales, asientos_ocupados, id_empleados, horar
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Snacks" msprop:Generator_TableClassName="SnacksDataTable" msprop:Generator_TableVarName="tableSnacks" msprop:Generator_TablePropName="Snacks" msprop:Generator_RowDeletingName="SnacksRowDeleting" msprop:Generator_RowChangingName="SnacksRowChanging" msprop:Generator_RowEvHandlerName="SnacksRowChangeEventHandler" msprop:Generator_RowDeletedName="SnacksRowDeleted" msprop:Generator_UserTableName="Snacks" msprop:Generator_RowChangedName="SnacksRowChanged" msprop:Generator_RowEvArgName="SnacksRowChangeEvent" msprop:Generator_RowClassName="SnacksRow">
+        <xs:element name="Snacks" msprop:Generator_TableClassName="SnacksDataTable" msprop:Generator_TableVarName="tableSnacks" msprop:Generator_RowChangedName="SnacksRowChanged" msprop:Generator_TablePropName="Snacks" msprop:Generator_RowDeletingName="SnacksRowDeleting" msprop:Generator_RowChangingName="SnacksRowChanging" msprop:Generator_RowEvHandlerName="SnacksRowChangeEventHandler" msprop:Generator_RowDeletedName="SnacksRowDeleted" msprop:Generator_RowClassName="SnacksRow" msprop:Generator_UserTableName="Snacks" msprop:Generator_RowEvArgName="SnacksRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="producto" msprop:Generator_ColumnVarNameInTable="columnproducto" msprop:Generator_ColumnPropNameInRow="producto" msprop:Generator_ColumnPropNameInTable="productoColumn" msprop:Generator_UserColumnName="producto">
@@ -419,9 +419,9 @@ SELECT id, numero_sala, asientos_totales, asientos_ocupados, id_empleados, horar
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="Funciones_x002F_Cartelera" msdata:parent="Funciones" msdata:child="Cartelera" msdata:parentkey="id" msdata:childkey="id_funciones" msprop:Generator_UserChildTable="Cartelera" msprop:Generator_ChildPropName="GetCarteleraRows" msprop:Generator_UserRelationName="Funciones/Cartelera" msprop:Generator_RelationVarName="_relationFunciones_Cartelera" msprop:Generator_UserParentTable="Funciones" msprop:Generator_ParentPropName="FuncionesRow" />
-      <msdata:Relationship name="Salas_x002F_Funciones" msdata:parent="Salas" msdata:child="Funciones" msdata:parentkey="id" msdata:childkey="id_salas" msprop:Generator_UserChildTable="Funciones" msprop:Generator_ChildPropName="GetFuncionesRows" msprop:Generator_UserRelationName="Salas/Funciones" msprop:Generator_RelationVarName="_relationSalas_Funciones" msprop:Generator_UserParentTable="Salas" msprop:Generator_ParentPropName="SalasRow" />
-      <msdata:Relationship name="Empleados_x002F_Salas" msdata:parent="Empleados" msdata:child="Salas" msdata:parentkey="id" msdata:childkey="asientos_ocupados" msprop:Generator_UserChildTable="Salas" msprop:Generator_ChildPropName="GetSalasRows" msprop:Generator_UserRelationName="Empleados/Salas" msprop:Generator_ParentPropName="EmpleadosRow" msprop:Generator_RelationVarName="_relationEmpleados_Salas" msprop:Generator_UserParentTable="Empleados" />
+      <msdata:Relationship name="Funciones_x002F_Cartelera" msdata:parent="Funciones" msdata:child="Cartelera" msdata:parentkey="id" msdata:childkey="id_funciones" msprop:Generator_UserChildTable="Cartelera" msprop:Generator_ChildPropName="GetCarteleraRows" msprop:Generator_UserRelationName="Funciones/Cartelera" msprop:Generator_ParentPropName="FuncionesRow" msprop:Generator_RelationVarName="_relationFunciones_Cartelera" msprop:Generator_UserParentTable="Funciones" />
+      <msdata:Relationship name="Salas_x002F_Funciones" msdata:parent="Salas" msdata:child="Funciones" msdata:parentkey="id" msdata:childkey="id_salas" msprop:Generator_UserChildTable="Funciones" msprop:Generator_ChildPropName="GetFuncionesRows" msprop:Generator_UserRelationName="Salas/Funciones" msprop:Generator_ParentPropName="SalasRow" msprop:Generator_RelationVarName="_relationSalas_Funciones" msprop:Generator_UserParentTable="Salas" />
+      <msdata:Relationship name="Empleados_x002F_Salas" msdata:parent="Empleados" msdata:child="Salas" msdata:parentkey="id" msdata:childkey="asientos_ocupados" msprop:Generator_UserChildTable="Salas" msprop:Generator_ChildPropName="GetSalasRows" msprop:Generator_UserRelationName="Empleados/Salas" msprop:Generator_RelationVarName="_relationEmpleados_Salas" msprop:Generator_UserParentTable="Empleados" msprop:Generator_ParentPropName="EmpleadosRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

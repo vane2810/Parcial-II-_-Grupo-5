@@ -773,7 +773,7 @@ namespace Parcial_II___Grupo_5 {
             
             private global::System.Data.DataColumn columncargo;
             
-            private global::System.Data.DataColumn columnsalario;
+            private global::System.Data.DataColumn columntelefono;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -842,9 +842,9 @@ namespace Parcial_II___Grupo_5 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn salarioColumn {
+            public global::System.Data.DataColumn telefonoColumn {
                 get {
-                    return this.columnsalario;
+                    return this.columntelefono;
                 }
             }
             
@@ -885,14 +885,14 @@ namespace Parcial_II___Grupo_5 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public EmpleadosRow AddEmpleadosRow(int id, string nombres, string apellidos, string cargo, decimal salario) {
+            public EmpleadosRow AddEmpleadosRow(int id, string nombres, string apellidos, string cargo, decimal telefono) {
                 EmpleadosRow rowEmpleadosRow = ((EmpleadosRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         id,
                         nombres,
                         apellidos,
                         cargo,
-                        salario};
+                        telefono};
                 rowEmpleadosRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowEmpleadosRow);
                 return rowEmpleadosRow;
@@ -926,7 +926,7 @@ namespace Parcial_II___Grupo_5 {
                 this.columnnombres = base.Columns["nombres"];
                 this.columnapellidos = base.Columns["apellidos"];
                 this.columncargo = base.Columns["cargo"];
-                this.columnsalario = base.Columns["salario"];
+                this.columntelefono = base.Columns["telefono"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -940,8 +940,8 @@ namespace Parcial_II___Grupo_5 {
                 base.Columns.Add(this.columnapellidos);
                 this.columncargo = new global::System.Data.DataColumn("cargo", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columncargo);
-                this.columnsalario = new global::System.Data.DataColumn("salario", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnsalario);
+                this.columntelefono = new global::System.Data.DataColumn("telefono", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columntelefono);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid}, true));
                 this.columnid.AllowDBNull = false;
@@ -2277,30 +2277,30 @@ namespace Parcial_II___Grupo_5 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public decimal salario {
+            public decimal telefono {
                 get {
                     try {
-                        return ((decimal)(this[this.tableEmpleados.salarioColumn]));
+                        return ((decimal)(this[this.tableEmpleados.telefonoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'salario\' de la tabla \'Empleados\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'telefono\' de la tabla \'Empleados\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableEmpleados.salarioColumn] = value;
+                    this[this.tableEmpleados.telefonoColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IssalarioNull() {
-                return this.IsNull(this.tableEmpleados.salarioColumn);
+            public bool IstelefonoNull() {
+                return this.IsNull(this.tableEmpleados.telefonoColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetsalarioNull() {
-                this[this.tableEmpleados.salarioColumn] = global::System.Convert.DBNull;
+            public void SettelefonoNull() {
+                this[this.tableEmpleados.telefonoColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3216,7 +3216,7 @@ namespace Parcial_II___Grupo_5.cineDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("nombres", "nombres");
             tableMapping.ColumnMappings.Add("apellidos", "apellidos");
             tableMapping.ColumnMappings.Add("cargo", "cargo");
-            tableMapping.ColumnMappings.Add("salario", "salario");
+            tableMapping.ColumnMappings.Add("salario", "telefono");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
