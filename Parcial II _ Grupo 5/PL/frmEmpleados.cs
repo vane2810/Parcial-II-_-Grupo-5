@@ -45,11 +45,11 @@ namespace Parcial_II___Grupo_5.PL
             }
             else
             {
-                string nombre = txtNombres.Text;
+                string nombres = txtNombres.Text;
                 string apellidos = txtApellidos.Text;
                 string cargo = txtCargo.Text;
                 string telefono = txtTelefono.Text;
-                EmpleadosBLL emp= new EmpleadosBLL(0, nombre, apellidos, cargo, telefono);
+                EmpleadosBLL emp= new EmpleadosBLL(0, nombres, apellidos, cargo, telefono);
                 if (empleados.createEmpleado(emp))
                 {
                     MessageBox.Show("Empleado registrado con éxito");

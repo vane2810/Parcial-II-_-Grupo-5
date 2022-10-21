@@ -159,7 +159,6 @@ namespace Parcial_II___Grupo_5.PL
             this.btnDelete.TabIndex = 12;
             this.btnDelete.Text = "Eliminar";
             this.btnDelete.UseVisualStyleBackColor = false;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click_1);
             // 
             // btnClose
             // 
