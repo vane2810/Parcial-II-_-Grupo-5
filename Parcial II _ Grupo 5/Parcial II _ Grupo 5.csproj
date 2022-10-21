@@ -62,6 +62,12 @@
     <Compile Include="DAL\FuncionesDAL.cs" />
     <Compile Include="DAL\SalasDAL.cs" />
     <Compile Include="DAL\SnacksDAL.cs" />
+    <Compile Include="PL\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\frmCartelera.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -15,7 +15,6 @@ namespace Parcial_II___Grupo_5.PL
     public partial class frmEmpleados : Form
     {
         EmpleadosDAL empleados;
-        
         public frmEmpleados()
         {
             InitializeComponent();
@@ -37,7 +36,7 @@ namespace Parcial_II___Grupo_5.PL
             txtCargo.Clear();
             txtTelefono.Clear();
         }
-        private void btnInsertar_Click(object sender, EventArgs e)
+        private void btnInsert_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtNombres.Text) || string.IsNullOrEmpty(txtApellidos.Text)
                 || string.IsNullOrEmpty(txtCargo.Text) || string.IsNullOrEmpty(txtTelefono.Text))
@@ -75,11 +74,11 @@ namespace Parcial_II___Grupo_5.PL
                 txtTelefono.Text = dgvEmpleados.Rows[index].Cells[4].Value.ToString();
             }
         }
-        private void btnCerrar_Click(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-        private void btnActualizar_Click(object sender, EventArgs e)
+        private void btnUpdate_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtId.Text) || string.IsNullOrEmpty(txtNombres.Text)
                 || string.IsNullOrEmpty(txtCargo.Text) || string.IsNullOrEmpty(txtTelefono.Text))
@@ -109,11 +108,11 @@ namespace Parcial_II___Grupo_5.PL
 
 
         }
-        private void btnEliminar_Click(object sender, EventArgs e)
+        private void btnDelete_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtId.Text))
             {
-                MessageBox.Show("Debe seleccionar una sede");
+                MessageBox.Show("Debe seleccionar un dato");
             }
             else
             {
@@ -124,7 +123,7 @@ namespace Parcial_II___Grupo_5.PL
                 {
                     if (empleados.deleteEmpleado(emp))
                     {
-                        MessageBox.Show("Sede eliminada con éxito");
+                        MessageBox.Show("Eliminado con éxito");
                         fillDgvEmpleados();
                         clearTextBox();
                     }
