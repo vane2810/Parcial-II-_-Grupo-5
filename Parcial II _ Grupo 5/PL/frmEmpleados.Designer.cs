@@ -94,6 +94,7 @@ namespace Parcial_II___Grupo_5.PL
             // 
             // txtId
             // 
+            this.txtId.BackColor = System.Drawing.SystemColors.Window;
             this.txtId.Location = new System.Drawing.Point(138, 22);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(316, 20);
@@ -101,6 +102,7 @@ namespace Parcial_II___Grupo_5.PL
             // 
             // txtNombres
             // 
+            this.txtNombres.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtNombres.Location = new System.Drawing.Point(138, 73);
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.Size = new System.Drawing.Size(316, 20);
@@ -129,42 +131,47 @@ namespace Parcial_II___Grupo_5.PL
             // 
             // btnInsertar
             // 
+            this.btnInsertar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnInsertar.Location = new System.Drawing.Point(30, 266);
             this.btnInsertar.Name = "btnInsertar";
             this.btnInsertar.Size = new System.Drawing.Size(75, 23);
             this.btnInsertar.TabIndex = 10;
             this.btnInsertar.Text = "Insertar";
-            this.btnInsertar.UseVisualStyleBackColor = true;
+            this.btnInsertar.UseVisualStyleBackColor = false;
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(138, 266);
+            this.btnActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnActualizar.Location = new System.Drawing.Point(147, 266);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(75, 23);
             this.btnActualizar.TabIndex = 11;
             this.btnActualizar.Text = "Actualizar";
-            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.UseVisualStyleBackColor = false;
             // 
             // btnEliminar
             // 
+            this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnEliminar.Location = new System.Drawing.Point(263, 266);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 23);
             this.btnEliminar.TabIndex = 12;
             this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.UseVisualStyleBackColor = false;
             // 
             // btnCerrar
             // 
+            this.btnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnCerrar.Location = new System.Drawing.Point(379, 266);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(75, 23);
             this.btnCerrar.TabIndex = 13;
             this.btnCerrar.Text = "Cerrar";
-            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.UseVisualStyleBackColor = false;
             // 
             // DgvEmpleados
             // 
+            this.DgvEmpleados.BackgroundColor = System.Drawing.Color.SeaShell;
             this.DgvEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvEmpleados.Location = new System.Drawing.Point(30, 305);
             this.DgvEmpleados.Name = "DgvEmpleados";
@@ -175,6 +182,7 @@ namespace Parcial_II___Grupo_5.PL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(475, 535);
             this.Controls.Add(this.DgvEmpleados);
             this.Controls.Add(this.btnCerrar);

@@ -40,7 +40,7 @@ namespace Parcial_II___Grupo_5.DAL
             }
         }
 
-        public bool createCartelera(CarteleraBLL emp)
+        public bool createCarteleras(CarteleraBLL emp)
         {
             try
             {
@@ -67,7 +67,7 @@ namespace Parcial_II___Grupo_5.DAL
             }
         }
 
-        public bool updateCartelera(CarteleraBLL emp)
+        public bool updateCarteleras(CarteleraBLL emp)
         {
             try
             {
@@ -94,7 +94,7 @@ namespace Parcial_II___Grupo_5.DAL
             }
         }
 
-        public bool deleteCartelera(CarteleraBLL emp)
+        public bool deleteCarteleras(CarteleraBLL emp)
         {
             try
             {

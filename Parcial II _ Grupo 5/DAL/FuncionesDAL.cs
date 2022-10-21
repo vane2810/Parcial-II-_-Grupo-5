@@ -40,7 +40,7 @@ namespace Parcial_II___Grupo_5.DAL
             }
         }
 
-        public bool createFunciones(FuncionesBLL emp)
+        public bool createFuncione(FuncionesBLL emp)
         {
             try
             {
@@ -67,7 +67,7 @@ namespace Parcial_II___Grupo_5.DAL
             }
         }
 
-        public bool updateFunciones(FuncionesBLL emp)
+        public bool updateFuncione(FuncionesBLL emp)
         {
             try
             {
@@ -94,7 +94,7 @@ namespace Parcial_II___Grupo_5.DAL
             }
         }
 
-        public bool deleteFunciones(FuncionesBLL emp)
+        public bool deleteFuncione(FuncionesBLL emp)
         {
             try
             {

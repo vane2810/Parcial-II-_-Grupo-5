@@ -40,7 +40,7 @@ namespace Parcial_II___Grupo_5.DAL
             }
         }
 
-        public bool createSalas(SalasBLL emp)
+        public bool createSala(SalasBLL emp)
         {
             try
             {
@@ -67,7 +67,7 @@ namespace Parcial_II___Grupo_5.DAL
             }
         }
 
-        public bool updateSalas(SalasBLL emp)
+        public bool updateSala(SalasBLL emp)
         {
             try
             {
@@ -94,7 +94,7 @@ namespace Parcial_II___Grupo_5.DAL
             }
         }
 
-        public bool deleteSalas(SalasBLL emp)
+        public bool deleteSala(SalasBLL emp)
         {
             try
             {

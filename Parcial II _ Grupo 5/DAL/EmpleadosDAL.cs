@@ -40,7 +40,7 @@ namespace Parcial_II___Grupo_5.DAL
             }
         }
 
-        public bool createEmpleados(EmpleadosBLL emp)
+        public bool createEmpleado(EmpleadosBLL emp)
         {
             try
             {
@@ -66,7 +66,7 @@ namespace Parcial_II___Grupo_5.DAL
             }
         }
 
-        public bool updateEmpleados(EmpleadosBLL emp)
+        public bool updateEmpleado(EmpleadosBLL emp)
         {
             try
             {
@@ -92,7 +92,7 @@ namespace Parcial_II___Grupo_5.DAL
             }
         }
 
-        public bool deleteEmpleados(EmpleadosBLL emp)
+        public bool deleteEmpleado(EmpleadosBLL emp)
         {
             try
             {
