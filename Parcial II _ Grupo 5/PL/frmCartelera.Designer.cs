@@ -37,16 +37,16 @@ namespace Parcial_II___Grupo_5.PL
             this.lbl6 = new System.Windows.Forms.Label();
             this.txtId_funcion = new System.Windows.Forms.TextBox();
             this.txtNombre_pelicula = new System.Windows.Forms.TextBox();
-            this.txtPeríodo_pelicula = new System.Windows.Forms.TextBox();
-            this.txtGanacias_funcion = new System.Windows.Forms.TextBox();
+            this.txtPeriodo_pelicula = new System.Windows.Forms.TextBox();
+            this.txtGanancias_funcion = new System.Windows.Forms.TextBox();
             this.txtGanancias_diarias = new System.Windows.Forms.TextBox();
             this.txtGanancias_totales = new System.Windows.Forms.TextBox();
-            this.btnInsertar = new System.Windows.Forms.Button();
-            this.btnAgregar = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.btnCerrar = new System.Windows.Forms.Button();
-            this.DgwCartelera = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.DgwCartelera)).BeginInit();
+            this.btnInsert = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.dgvCartelera = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCartelera)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl1
@@ -117,19 +117,19 @@ namespace Parcial_II___Grupo_5.PL
             this.txtNombre_pelicula.Size = new System.Drawing.Size(430, 20);
             this.txtNombre_pelicula.TabIndex = 8;
             // 
-            // txtPeríodo_pelicula
+            // txtPeriodo_pelicula
             // 
-            this.txtPeríodo_pelicula.Location = new System.Drawing.Point(139, 113);
-            this.txtPeríodo_pelicula.Name = "txtPeríodo_pelicula";
-            this.txtPeríodo_pelicula.Size = new System.Drawing.Size(430, 20);
-            this.txtPeríodo_pelicula.TabIndex = 9;
+            this.txtPeriodo_pelicula.Location = new System.Drawing.Point(139, 113);
+            this.txtPeriodo_pelicula.Name = "txtPeriodo_pelicula";
+            this.txtPeriodo_pelicula.Size = new System.Drawing.Size(430, 20);
+            this.txtPeriodo_pelicula.TabIndex = 9;
             // 
-            // txtGanacias_funcion
+            // txtGanancias_funcion
             // 
-            this.txtGanacias_funcion.Location = new System.Drawing.Point(139, 157);
-            this.txtGanacias_funcion.Name = "txtGanacias_funcion";
-            this.txtGanacias_funcion.Size = new System.Drawing.Size(430, 20);
-            this.txtGanacias_funcion.TabIndex = 10;
+            this.txtGanancias_funcion.Location = new System.Drawing.Point(139, 157);
+            this.txtGanancias_funcion.Name = "txtGanancias_funcion";
+            this.txtGanancias_funcion.Size = new System.Drawing.Size(430, 20);
+            this.txtGanancias_funcion.TabIndex = 10;
             // 
             // txtGanancias_diarias
             // 
@@ -145,64 +145,65 @@ namespace Parcial_II___Grupo_5.PL
             this.txtGanancias_totales.Size = new System.Drawing.Size(430, 20);
             this.txtGanancias_totales.TabIndex = 12;
             // 
-            // btnInsertar
+            // btnInsert
             // 
-            this.btnInsertar.Location = new System.Drawing.Point(478, 296);
-            this.btnInsertar.Name = "btnInsertar";
-            this.btnInsertar.Size = new System.Drawing.Size(75, 23);
-            this.btnInsertar.TabIndex = 14;
-            this.btnInsertar.Text = "Insertar";
-            this.btnInsertar.UseVisualStyleBackColor = true;
+            this.btnInsert.Location = new System.Drawing.Point(478, 296);
+            this.btnInsert.Name = "btnInsert";
+            this.btnInsert.Size = new System.Drawing.Size(75, 23);
+            this.btnInsert.TabIndex = 14;
+            this.btnInsert.Text = "Insertar";
+            this.btnInsert.UseVisualStyleBackColor = true;
             // 
-            // btnAgregar
+            // btnUpdate
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(478, 369);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
-            this.btnAgregar.TabIndex = 15;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnUpdate.Location = new System.Drawing.Point(478, 369);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 15;
+            this.btnUpdate.Text = "Actualizar";
+            this.btnUpdate.UseVisualStyleBackColor = true;
             // 
-            // btnEliminar
+            // btnDelete
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(478, 443);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
-            this.btnEliminar.TabIndex = 16;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnDelete.Location = new System.Drawing.Point(478, 443);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 16;
+            this.btnDelete.Text = "Eliminar";
+            this.btnDelete.UseVisualStyleBackColor = true;
             // 
-            // btnCerrar
+            // btnClose
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(478, 515);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(75, 23);
-            this.btnCerrar.TabIndex = 17;
-            this.btnCerrar.Text = "Cerrar";
-            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnClose.Location = new System.Drawing.Point(478, 515);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(75, 23);
+            this.btnClose.TabIndex = 17;
+            this.btnClose.Text = "Cerrar";
+            this.btnClose.UseVisualStyleBackColor = true;
             // 
-            // DgwCartelera
+            // dgvCartelera
             // 
-            this.DgwCartelera.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgwCartelera.Location = new System.Drawing.Point(27, 296);
-            this.DgwCartelera.Name = "DgwCartelera";
-            this.DgwCartelera.Size = new System.Drawing.Size(412, 242);
-            this.DgwCartelera.TabIndex = 18;
+            this.dgvCartelera.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCartelera.Location = new System.Drawing.Point(27, 296);
+            this.dgvCartelera.Name = "dgvCartelera";
+            this.dgvCartelera.Size = new System.Drawing.Size(412, 242);
+            this.dgvCartelera.TabIndex = 18;
+            this.dgvCartelera.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCartelera_CellContentClick);
             // 
             // frmCartelera
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(581, 550);
-            this.Controls.Add(this.DgwCartelera);
-            this.Controls.Add(this.btnCerrar);
-            this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.btnInsertar);
+            this.Controls.Add(this.dgvCartelera);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnInsert);
             this.Controls.Add(this.txtGanancias_totales);
             this.Controls.Add(this.txtGanancias_diarias);
-            this.Controls.Add(this.txtGanacias_funcion);
-            this.Controls.Add(this.txtPeríodo_pelicula);
+            this.Controls.Add(this.txtGanancias_funcion);
+            this.Controls.Add(this.txtPeriodo_pelicula);
             this.Controls.Add(this.txtNombre_pelicula);
             this.Controls.Add(this.txtId_funcion);
             this.Controls.Add(this.lbl6);
@@ -213,7 +214,7 @@ namespace Parcial_II___Grupo_5.PL
             this.Controls.Add(this.lbl1);
             this.Name = "frmCartelera";
             this.Text = "frmFunciones";
-            ((System.ComponentModel.ISupportInitialize)(this.DgwCartelera)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCartelera)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -229,14 +230,14 @@ namespace Parcial_II___Grupo_5.PL
         private System.Windows.Forms.Label lbl6;
         private System.Windows.Forms.TextBox txtId_funcion;
         private System.Windows.Forms.TextBox txtNombre_pelicula;
-        private System.Windows.Forms.TextBox txtPeríodo_pelicula;
-        private System.Windows.Forms.TextBox txtGanacias_funcion;
+        private System.Windows.Forms.TextBox txtPeriodo_pelicula;
+        private System.Windows.Forms.TextBox txtGanancias_funcion;
         private System.Windows.Forms.TextBox txtGanancias_diarias;
         private System.Windows.Forms.TextBox txtGanancias_totales;
-        private System.Windows.Forms.Button btnInsertar;
-        private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.DataGridView DgwCartelera;
+        private System.Windows.Forms.Button btnInsert;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.DataGridView dgvCartelera;
     }
 }

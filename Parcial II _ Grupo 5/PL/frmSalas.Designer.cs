@@ -35,18 +35,18 @@ namespace Parcial_II___Grupo_5.PL
             this.lbl4 = new System.Windows.Forms.Label();
             this.lbl5 = new System.Windows.Forms.Label();
             this.lbl6 = new System.Windows.Forms.Label();
-            this.DgwSalas = new System.Windows.Forms.DataGridView();
-            this.btnInsertar = new System.Windows.Forms.Button();
-            this.btnActualizar = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.btnCerrar = new System.Windows.Forms.Button();
+            this.dgvSalas = new System.Windows.Forms.DataGridView();
+            this.btnInsert = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.txtId = new System.Windows.Forms.TextBox();
             this.txtAsientos_totales = new System.Windows.Forms.TextBox();
             this.txtAsientos_ocupados = new System.Windows.Forms.TextBox();
             this.txtId_empleados = new System.Windows.Forms.TextBox();
-            this.textHorarios_limpieza = new System.Windows.Forms.TextBox();
-            this.cmbSalas = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.DgwSalas)).BeginInit();
+            this.txtHorario_limpieza = new System.Windows.Forms.TextBox();
+            this.txtSala = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSalas)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl1
@@ -109,53 +109,53 @@ namespace Parcial_II___Grupo_5.PL
             this.lbl6.TabIndex = 5;
             this.lbl6.Text = "Horarios limpieza";
             // 
-            // DgwSalas
+            // dgvSalas
             // 
-            this.DgwSalas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgwSalas.Location = new System.Drawing.Point(15, 249);
-            this.DgwSalas.Name = "DgwSalas";
-            this.DgwSalas.Size = new System.Drawing.Size(475, 221);
-            this.DgwSalas.TabIndex = 6;
+            this.dgvSalas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSalas.Location = new System.Drawing.Point(15, 249);
+            this.dgvSalas.Name = "dgvSalas";
+            this.dgvSalas.Size = new System.Drawing.Size(475, 221);
+            this.dgvSalas.TabIndex = 6;
             // 
-            // btnInsertar
+            // btnInsert
             // 
-            this.btnInsertar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInsertar.Location = new System.Drawing.Point(15, 487);
-            this.btnInsertar.Name = "btnInsertar";
-            this.btnInsertar.Size = new System.Drawing.Size(75, 23);
-            this.btnInsertar.TabIndex = 7;
-            this.btnInsertar.Text = "Insertar";
-            this.btnInsertar.UseVisualStyleBackColor = true;
+            this.btnInsert.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInsert.Location = new System.Drawing.Point(15, 487);
+            this.btnInsert.Name = "btnInsert";
+            this.btnInsert.Size = new System.Drawing.Size(75, 23);
+            this.btnInsert.TabIndex = 7;
+            this.btnInsert.Text = "Insertar";
+            this.btnInsert.UseVisualStyleBackColor = true;
             // 
-            // btnActualizar
+            // btnUpdate
             // 
-            this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizar.Location = new System.Drawing.Point(152, 487);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
-            this.btnActualizar.TabIndex = 8;
-            this.btnActualizar.Text = "Actualizar";
-            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Location = new System.Drawing.Point(152, 487);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 8;
+            this.btnUpdate.Text = "Actualizar";
+            this.btnUpdate.UseVisualStyleBackColor = true;
             // 
-            // btnEliminar
+            // btnDelete
             // 
-            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(286, 487);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
-            this.btnEliminar.TabIndex = 9;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Location = new System.Drawing.Point(286, 487);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 9;
+            this.btnDelete.Text = "Eliminar";
+            this.btnDelete.UseVisualStyleBackColor = true;
             // 
-            // btnCerrar
+            // btnClose
             // 
-            this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrar.Location = new System.Drawing.Point(415, 487);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(75, 23);
-            this.btnCerrar.TabIndex = 10;
-            this.btnCerrar.Text = "Cerrar";
-            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Location = new System.Drawing.Point(415, 487);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(75, 23);
+            this.btnClose.TabIndex = 10;
+            this.btnClose.Text = "Cerrar";
+            this.btnClose.UseVisualStyleBackColor = true;
             // 
             // txtId
             // 
@@ -185,43 +185,36 @@ namespace Parcial_II___Grupo_5.PL
             this.txtId_empleados.Size = new System.Drawing.Size(212, 20);
             this.txtId_empleados.TabIndex = 15;
             // 
-            // textHorarios_limpieza
+            // txtHorario_limpieza
             // 
-            this.textHorarios_limpieza.Location = new System.Drawing.Point(278, 214);
-            this.textHorarios_limpieza.Name = "textHorarios_limpieza";
-            this.textHorarios_limpieza.Size = new System.Drawing.Size(214, 20);
-            this.textHorarios_limpieza.TabIndex = 16;
+            this.txtHorario_limpieza.Location = new System.Drawing.Point(278, 214);
+            this.txtHorario_limpieza.Name = "txtHorario_limpieza";
+            this.txtHorario_limpieza.Size = new System.Drawing.Size(214, 20);
+            this.txtHorario_limpieza.TabIndex = 16;
             // 
-            // cmbSalas
+            // txtSala
             // 
-            this.cmbSalas.FormattingEnabled = true;
-            this.cmbSalas.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbSalas.Location = new System.Drawing.Point(278, 41);
-            this.cmbSalas.Name = "cmbSalas";
-            this.cmbSalas.Size = new System.Drawing.Size(212, 21);
-            this.cmbSalas.TabIndex = 17;
+            this.txtSala.Location = new System.Drawing.Point(278, 42);
+            this.txtSala.Name = "txtSala";
+            this.txtSala.Size = new System.Drawing.Size(212, 20);
+            this.txtSala.TabIndex = 17;
             // 
             // frmSalas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(504, 522);
-            this.Controls.Add(this.cmbSalas);
-            this.Controls.Add(this.textHorarios_limpieza);
+            this.Controls.Add(this.txtSala);
+            this.Controls.Add(this.txtHorario_limpieza);
             this.Controls.Add(this.txtId_empleados);
             this.Controls.Add(this.txtAsientos_ocupados);
             this.Controls.Add(this.txtAsientos_totales);
             this.Controls.Add(this.txtId);
-            this.Controls.Add(this.btnCerrar);
-            this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.btnActualizar);
-            this.Controls.Add(this.btnInsertar);
-            this.Controls.Add(this.DgwSalas);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnInsert);
+            this.Controls.Add(this.dgvSalas);
             this.Controls.Add(this.lbl6);
             this.Controls.Add(this.lbl5);
             this.Controls.Add(this.lbl4);
@@ -230,7 +223,7 @@ namespace Parcial_II___Grupo_5.PL
             this.Controls.Add(this.lbl1);
             this.Name = "frmSalas";
             this.Text = "frmSalas";
-            ((System.ComponentModel.ISupportInitialize)(this.DgwSalas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSalas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,16 +237,16 @@ namespace Parcial_II___Grupo_5.PL
         private System.Windows.Forms.Label lbl4;
         private System.Windows.Forms.Label lbl5;
         private System.Windows.Forms.Label lbl6;
-        private System.Windows.Forms.DataGridView DgwSalas;
-        private System.Windows.Forms.Button btnInsertar;
-        private System.Windows.Forms.Button btnActualizar;
-        private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.DataGridView dgvSalas;
+        private System.Windows.Forms.Button btnInsert;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.TextBox txtAsientos_totales;
         private System.Windows.Forms.TextBox txtAsientos_ocupados;
         private System.Windows.Forms.TextBox txtId_empleados;
-        private System.Windows.Forms.TextBox textHorarios_limpieza;
-        private System.Windows.Forms.ComboBox cmbSalas;
+        private System.Windows.Forms.TextBox txtHorario_limpieza;
+        private System.Windows.Forms.TextBox txtSala;
     }
 }
