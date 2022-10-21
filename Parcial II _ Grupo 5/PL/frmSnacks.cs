@@ -1,7 +1,6 @@
 ﻿using Parcial_II___Grupo_5.BLL;
 using Parcial_II___Grupo_5.DAL;
 using System;
-using Parcial_II___Grupo_5.Properties;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -56,8 +55,8 @@ namespace Parcial_II___Grupo_5.PL
                 double precio_compra = Convert.ToInt32(txtCompra.Text);
                 double precio_venta = Convert.ToInt32(txtVenta.Text);
                 int cantidad = int.Parse(txtCantidad.Text);
-                SnacksBLL snacks= new SnacksBLL(0, producto, marca, precio_compra, precio_venta, cantidad);
-                if (snacks.create(snacks))
+                SnacksBLL snack = new SnacksBLL(0, producto, marca, precio_compra, precio_venta, cantidad);
+                if (snacks.createSnack(snack))
                 {
                     MessageBox.Show("Los datos se ingresaron con éxito");
                     fillDgvSnacks();
@@ -78,12 +77,12 @@ namespace Parcial_II___Grupo_5.PL
                 txtProducto.Text = dgvSnacks.Rows[index].Cells[1].Value.ToString();
                 txtMarca.Text = dgvSnacks.Rows[index].Cells[2].Value.ToString();
                 txtCompra.Text = dgvSnacks.Rows[index].Cells[3].Value.ToString();
-                txtMarca.Text = dgvSnacks.Rows[index].Cells[4].Value.ToString();
+                txtVenta.Text = dgvSnacks.Rows[index].Cells[4].Value.ToString();
+                txtCantidad.Text = dgvSnacks.Rows[index].Cells[5].Value.ToString();
             }
 
         }
         
-
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -104,9 +103,9 @@ namespace Parcial_II___Grupo_5.PL
                 double precio_compra = Convert.ToInt32(txtCompra.Text);
                 double precio_venta = Convert.ToInt32(txtVenta.Text);
                 int cantidad = int.Parse(txtCantidad.Text);
-                SnacksBLL snacks = new SnacksBLL(id, producto, marca, precio_compra, precio_venta, cantidad);
+                SnacksBLL snack = new SnacksBLL(id, producto, marca, precio_compra, precio_venta, cantidad);
                 SnacksDAL create = new SnacksDAL();
-                if (create.updateSnacks(snacks))
+                if (create.updateSnack(snack))
                 {
                     MessageBox.Show("Sede actualizada con éxito");
                     fillDgvSnacks();
@@ -123,30 +122,27 @@ namespace Parcial_II___Grupo_5.PL
         {
             if (string.IsNullOrEmpty(txtId.Text))
             {
-                MessageBox.Show("Debe seleccionar una sede");
+                MessageBox.Show("Debe seleccionar un dato");
             }
             else
             {
                 int id = int.Parse(txtId.Text);
-                SnacksBLL snacks = new SnacksBLL(id);
-                var confirm = MessageBox.Show("¿Estás seguro de eliminar esta sede?", "Confirmar", MessageBoxButtons.YesNo);
+                SnacksBLL snack = new SnacksBLL(id);
+                var confirm = MessageBox.Show("¿Estás seguro de eliminar?", "Confirmar", MessageBoxButtons.YesNo);
                 if (confirm == DialogResult.Yes)
                 {
-                    if (snacks.deleteSnacks(snacks))
+                    if (snacks.deleteSnack(snack))
                     {
-                        MessageBox.Show("Sede eliminada con éxito");
+                        MessageBox.Show("Dato eliminado con éxito");
                         fillDgvSnacks();
                         clearTextBox();
                     }
                     else
                     {
-                        MessageBox.Show("No se pudo eliminar la sede");
+                        MessageBox.Show("No se pudo eliminar");
                     }
                 }
             }
         }
-
-        
     }
-    
 }

@@ -1,5 +1,4 @@
-﻿
-using Parcial_II___Grupo_5.BLL;
+﻿using Parcial_II___Grupo_5.BLL;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -40,7 +39,7 @@ namespace Parcial_II___Grupo_5.DAL
             }
         }
 
-        public bool createSnacks(SnacksBLL emp)
+        public bool createSnack(SnacksBLL emp)
         {
             try
             {
@@ -67,7 +66,7 @@ namespace Parcial_II___Grupo_5.DAL
             }
         }
 
-        public bool updateSnacks(SnacksBLL emp)
+        public bool updateSnack(SnacksBLL emp)
         {
             try
             {
@@ -94,7 +93,7 @@ namespace Parcial_II___Grupo_5.DAL
             }
         }
 
-        public bool deleteSnacks(SnacksBLL emp)
+        public bool deleteSnack(SnacksBLL emp)
         {
             try
             {
