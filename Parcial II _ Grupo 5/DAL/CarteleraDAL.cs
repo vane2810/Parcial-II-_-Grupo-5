@@ -40,7 +40,7 @@ namespace Parcial_II___Grupo_5.DAL
             }
         }
 
-        public bool createCarteleras(CarteleraBLL emp)
+        public bool createCarteleras(CarteleraBLL carte)
         {
             try
             {
@@ -49,11 +49,11 @@ namespace Parcial_II___Grupo_5.DAL
                 {
                     Con.Open();
                     cmd.CommandText = "INSERT INTO Cartelera (nombre_pelicula, periodo_pelicula, ganancias_funcion , ganancias_diarias, ganancias_totales) VALUES (@nom_peli, @per_peli, @gan_fun, @gan_dia, gan_total);";
-                    cmd.Parameters.AddWithValue("@nom_peli", emp.Nombre_pelicula);
-                    cmd.Parameters.AddWithValue("@per_peli", emp.Periodo_pelicula);
-                    cmd.Parameters.AddWithValue("@gan_fun", emp.Ganancias_funcion);
-                    cmd.Parameters.AddWithValue("@gan_dia", emp.Ganancias_diarias);
-                    cmd.Parameters.AddWithValue("@gan_total", emp.Ganancias_totales);
+                    cmd.Parameters.AddWithValue("@nom_peli", carte.Nombre_pelicula);
+                    cmd.Parameters.AddWithValue("@per_peli", carte.Periodo_pelicula);
+                    cmd.Parameters.AddWithValue("@gan_fun", carte.Ganancias_funcion);
+                    cmd.Parameters.AddWithValue("@gan_dia", carte.Ganancias_diarias);
+                    cmd.Parameters.AddWithValue("@gan_total", carte.Ganancias_totales);
                     cmd.ExecuteNonQuery();
                     Con.Close();
 
@@ -67,7 +67,7 @@ namespace Parcial_II___Grupo_5.DAL
             }
         }
 
-        public bool updateCarteleras(CarteleraBLL emp)
+        public bool updateCarteleras(CarteleraBLL carte)
         {
             try
             {
@@ -76,12 +76,12 @@ namespace Parcial_II___Grupo_5.DAL
                 {
                     Con.Open();
                     cmd.CommandText = "UPDATE Cartelera SET nombre_pelicula = @nom_peli, periodo_pelicula = @per_peli, ganancias_funcion = @gan_fun, ganancias_diarias = @gan_dia, ganancias_totales = gan_total WHERE id_funciones = @id);";
-                    cmd.Parameters.AddWithValue("@id", emp.Id_funciones);
-                    cmd.Parameters.AddWithValue("@nom_peli", emp.Nombre_pelicula);
-                    cmd.Parameters.AddWithValue("@per_peli", emp.Periodo_pelicula);
-                    cmd.Parameters.AddWithValue("@gan_fun", emp.Ganancias_funcion);
-                    cmd.Parameters.AddWithValue("@gan_dia", emp.Ganancias_diarias);
-                    cmd.Parameters.AddWithValue("@gan_total", emp.Ganancias_totales);
+                    cmd.Parameters.AddWithValue("@id", carte.Id_funciones);
+                    cmd.Parameters.AddWithValue("@nom_peli", carte.Nombre_pelicula);
+                    cmd.Parameters.AddWithValue("@per_peli", carte.Periodo_pelicula);
+                    cmd.Parameters.AddWithValue("@gan_fun", carte.Ganancias_funcion);
+                    cmd.Parameters.AddWithValue("@gan_dia", carte.Ganancias_diarias);
+                    cmd.Parameters.AddWithValue("@gan_total", carte.Ganancias_totales);
                     cmd.ExecuteNonQuery();
                     Con.Close();
 
@@ -94,7 +94,7 @@ namespace Parcial_II___Grupo_5.DAL
             }
         }
 
-        public bool deleteCarteleras(CarteleraBLL emp)
+        public bool deleteCarteleras(CarteleraBLL carte)
         {
             try
             {
@@ -103,7 +103,7 @@ namespace Parcial_II___Grupo_5.DAL
                 {
                     Con.Open();
                     cmd.CommandText = "DELETE FROM Cartelera WHERE id = @id;";
-                    cmd.Parameters.AddWithValue("@id", emp.Id_funciones);
+                    cmd.Parameters.AddWithValue("@id", carte.Id_funciones);
                     cmd.ExecuteNonQuery();
                     Con.Close();
 

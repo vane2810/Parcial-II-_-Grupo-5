@@ -40,7 +40,7 @@ namespace Parcial_II___Grupo_5.DAL
             }
         }
 
-        public bool createSala(SalasBLL emp)
+        public bool createSala(SalasBLL sala)
         {
             try
             {
@@ -49,11 +49,11 @@ namespace Parcial_II___Grupo_5.DAL
                 {
                     Con.Open();
                     cmd.CommandText = "INSERT INTO Salas (numero_sala, asientos_totales, asientos_ocupados, id_empleados, horario_limpieza) VALUES (@n_s, @a_t, @a_o, @id_e, @ho_l);";
-                    cmd.Parameters.AddWithValue("@n_s", emp.Numero_sala);
-                    cmd.Parameters.AddWithValue("@a_t", emp.Asientos_totales);
-                    cmd.Parameters.AddWithValue("@a_o", emp.Asientos_ocupados);
-                    cmd.Parameters.AddWithValue("@id_e", emp.Id_empleados);
-                    cmd.Parameters.AddWithValue("@ho_l", emp.Horario_limpieza);
+                    cmd.Parameters.AddWithValue("@n_s", sala.Numero_sala);
+                    cmd.Parameters.AddWithValue("@a_t", sala.Asientos_totales);
+                    cmd.Parameters.AddWithValue("@a_o", sala.Asientos_ocupados);
+                    cmd.Parameters.AddWithValue("@id_e", sala.Id_empleados);
+                    cmd.Parameters.AddWithValue("@ho_l", sala.Horario_limpieza);
                     cmd.ExecuteNonQuery();
                     Con.Close();
 
@@ -67,7 +67,7 @@ namespace Parcial_II___Grupo_5.DAL
             }
         }
 
-        public bool updateSala(SalasBLL emp)
+        public bool updateSala(SalasBLL sala)
         {
             try
             {
@@ -76,12 +76,12 @@ namespace Parcial_II___Grupo_5.DAL
                 {
                     Con.Open();
                     cmd.CommandText = "UPDATE Salas SET numero_sala = @n_s, asientos_totales = @a_t, asientos_ocupados = @a_o, id_empleados = @id_e, horario_limpieza = ho_l WHERE id = @id);";
-                    cmd.Parameters.AddWithValue("@id", emp.Id);
-                    cmd.Parameters.AddWithValue("@n_s", emp.Numero_sala);
-                    cmd.Parameters.AddWithValue("@a_t", emp.Asientos_totales);
-                    cmd.Parameters.AddWithValue("@a_o", emp.Asientos_ocupados);
-                    cmd.Parameters.AddWithValue("@id_e", emp.Id_empleados);
-                    cmd.Parameters.AddWithValue("@ho_l", emp.Horario_limpieza);
+                    cmd.Parameters.AddWithValue("@id", sala.Id);
+                    cmd.Parameters.AddWithValue("@n_s", sala.Numero_sala);
+                    cmd.Parameters.AddWithValue("@a_t", sala.Asientos_totales);
+                    cmd.Parameters.AddWithValue("@a_o", sala.Asientos_ocupados);
+                    cmd.Parameters.AddWithValue("@id_e", sala.Id_empleados);
+                    cmd.Parameters.AddWithValue("@ho_l", sala.Horario_limpieza);
                     cmd.ExecuteNonQuery();
                     Con.Close();
 
@@ -94,7 +94,7 @@ namespace Parcial_II___Grupo_5.DAL
             }
         }
 
-        public bool deleteSala(SalasBLL emp)
+        public bool deleteSala(SalasBLL sala)
         {
             try
             {
@@ -103,7 +103,7 @@ namespace Parcial_II___Grupo_5.DAL
                 {
                     Con.Open();
                     cmd.CommandText = "DELETE FROM Salas WHERE id = @id;";
-                    cmd.Parameters.AddWithValue("@id", emp.Id);
+                    cmd.Parameters.AddWithValue("@id", sala.Id);
                     cmd.ExecuteNonQuery();
                     Con.Close();
 

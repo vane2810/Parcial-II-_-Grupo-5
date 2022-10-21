@@ -40,7 +40,7 @@ namespace Parcial_II___Grupo_5.DAL
             }
         }
 
-        public bool createFuncion(FuncionesBLL sala)
+        public bool createFuncion(FuncionesBLL funcion)
         {
             try
             {
@@ -49,11 +49,11 @@ namespace Parcial_II___Grupo_5.DAL
                 {
                     Con.Open();
                     cmd.CommandText = "INSERT INTO Funciones (entra_a, entra_n, entra_e , dur_peli, fun_dia) VALUES (@entra_a, @entra_n, @entra_e, @dur_peli, fun_dia);";
-                    cmd.Parameters.AddWithValue("@entra_a", sala.Entrada_adultos);
-                    cmd.Parameters.AddWithValue("@entra_n", sala.Entrada_niños);
-                    cmd.Parameters.AddWithValue("@entra_e", sala.Entrada_estudiantes);
-                    cmd.Parameters.AddWithValue("@dur_peli", sala.Duracion_pelicula);
-                    cmd.Parameters.AddWithValue("fun_dia", sala.Funciones_diarias);
+                    cmd.Parameters.AddWithValue("@entra_a", funcion.Entrada_adultos);
+                    cmd.Parameters.AddWithValue("@entra_n", funcion.Entrada_niños);
+                    cmd.Parameters.AddWithValue("@entra_e", funcion.Entrada_estudiantes);
+                    cmd.Parameters.AddWithValue("@dur_peli", funcion.Duracion_pelicula);
+                    cmd.Parameters.AddWithValue("fun_dia", funcion.Funciones_diarias);
                     cmd.ExecuteNonQuery();
                     Con.Close();
 
@@ -67,7 +67,7 @@ namespace Parcial_II___Grupo_5.DAL
             }
         }
 
-        public bool updateFuncion(FuncionesBLL sala)
+        public bool updateFuncion(FuncionesBLL funcion)
         {
             try
             {
@@ -76,12 +76,12 @@ namespace Parcial_II___Grupo_5.DAL
                 {
                     Con.Open();
                     cmd.CommandText = "UPDATE Funciones SET entrada_adultos = @entra_a, entrada_niños = @entra_n, entrada_estudiantes = @entra_e, duracion_pelicula = @dur_peli, funciones_diarias = fun_dia WHERE id = @id);";
-                    cmd.Parameters.AddWithValue("@id", sala.Id);
-                    cmd.Parameters.AddWithValue("@entra_a", sala.Entrada_adultos);
-                    cmd.Parameters.AddWithValue("@entra_n", sala.Entrada_niños);
-                    cmd.Parameters.AddWithValue("@entra_e", sala.Entrada_estudiantes);
-                    cmd.Parameters.AddWithValue("@dur_peli", sala.Duracion_pelicula);
-                    cmd.Parameters.AddWithValue("@fun_dia", sala.Funciones_diarias);
+                    cmd.Parameters.AddWithValue("@id", funcion.Id);
+                    cmd.Parameters.AddWithValue("@entra_a", funcion.Entrada_adultos);
+                    cmd.Parameters.AddWithValue("@entra_n", funcion.Entrada_niños);
+                    cmd.Parameters.AddWithValue("@entra_e", funcion .Entrada_estudiantes);
+                    cmd.Parameters.AddWithValue("@dur_peli", funcion.Duracion_pelicula);
+                    cmd.Parameters.AddWithValue("@fun_dia", funcion.Funciones_diarias);
                     cmd.ExecuteNonQuery();
                     Con.Close();
 
@@ -94,7 +94,7 @@ namespace Parcial_II___Grupo_5.DAL
             }
         }
 
-        public bool deleteFuncion(FuncionesBLL sala)
+        public bool deleteFuncion(FuncionesBLL funcion)
         {
             try
             {
@@ -103,7 +103,7 @@ namespace Parcial_II___Grupo_5.DAL
                 {
                     Con.Open();
                     cmd.CommandText = "DELETE FROM Funciones WHERE id = @id;";
-                    cmd.Parameters.AddWithValue("@id", sala.Id);
+                    cmd.Parameters.AddWithValue("@id", funcion.Id);
                     cmd.ExecuteNonQuery();
                     Con.Close();
 

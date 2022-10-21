@@ -55,8 +55,8 @@ namespace Parcial_II___Grupo_5.PL
                 double ganancias_funcion = double.Parse(txtGanancias_funcion.Text);
                 double ganancias_diarias = double.Parse(txtGanancias_diarias.Text);
                 double ganancias_totales = double.Parse(txtGanancias_totales.Text);
-                CarteleraBLL carteleras = new CarteleraBLL(0, nombre_pelicula, periodo_pelicula, ganancias_funcion, ganancias_diarias, ganancias_totales);
-                if (cartelera.createCarteleras(carteleras))
+                CarteleraBLL carte = new CarteleraBLL(0, nombre_pelicula, periodo_pelicula, ganancias_funcion, ganancias_diarias, ganancias_totales);
+                if (cartelera.createCarteleras(carte))
                 {
                     MessageBox.Show("Los datos de cartelera se ingresaron con éxito");
                     fillDgvCartelera();
@@ -128,11 +128,11 @@ namespace Parcial_II___Grupo_5.PL
             else
             {
                 int id = int.Parse(txtId_funcion.Text);
-                CarteleraBLL carteleras = new CarteleraBLL(id);
+                CarteleraBLL carte = new CarteleraBLL(id);
                 var confirm = MessageBox.Show("¿Estás seguro de eliminar?", "Confirmar", MessageBoxButtons.YesNo);
                 if (confirm == DialogResult.Yes)
                 {
-                    if (cartelera.deleteCarteleras(carteleras))
+                    if (cartelera.deleteCarteleras(carte))
                     {
                         MessageBox.Show("Dato eliminado con éxito");
                         fillDgvCartelera();

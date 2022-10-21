@@ -39,7 +39,7 @@ namespace Parcial_II___Grupo_5.DAL
             }
         }
 
-        public bool createSnack(SnacksBLL emp)
+        public bool createSnack(SnacksBLL snack)
         {
             try
             {
@@ -48,11 +48,11 @@ namespace Parcial_II___Grupo_5.DAL
                 {
                     Con.Open();
                     cmd.CommandText = "INSERT INTO Snacks (producto, marca , precio_compra, precio_venta, cantidad) VALUES (@pro, @mar, @p_c, @p_v, can);";
-                    cmd.Parameters.AddWithValue("@pro", emp.Producto);
-                    cmd.Parameters.AddWithValue("@mar", emp.Marca);
-                    cmd.Parameters.AddWithValue("@p_c", emp.Precio_compra);
-                    cmd.Parameters.AddWithValue("@p_v", emp.Precio_venta);
-                    cmd.Parameters.AddWithValue("@can", emp.Cantidad);
+                    cmd.Parameters.AddWithValue("@pro", snack.Producto);
+                    cmd.Parameters.AddWithValue("@mar", snack.Marca);
+                    cmd.Parameters.AddWithValue("@p_c", snack.Precio_compra);
+                    cmd.Parameters.AddWithValue("@p_v", snack.Precio_venta);
+                    cmd.Parameters.AddWithValue("@can", snack.Cantidad);
                     cmd.ExecuteNonQuery();
                     Con.Close();
 
@@ -66,7 +66,7 @@ namespace Parcial_II___Grupo_5.DAL
             }
         }
 
-        public bool updateSnack(SnacksBLL emp)
+        public bool updateSnack(SnacksBLL snack)
         {
             try
             {
@@ -75,12 +75,12 @@ namespace Parcial_II___Grupo_5.DAL
                 {
                     Con.Open();
                     cmd.CommandText = "UPDATE Snacks SET producto = @pro, marca = @mar, precio_compra = @p_c, precio_venta = @p_v, cantidad = @can WHERE id = @id);";
-                    cmd.Parameters.AddWithValue("@id", emp.Id);
-                    cmd.Parameters.AddWithValue("@pro", emp.Producto);
-                    cmd.Parameters.AddWithValue("@mar", emp.Marca);
-                    cmd.Parameters.AddWithValue("@precio_compra", emp.Precio_compra);
-                    cmd.Parameters.AddWithValue("@precio_venta", emp.Precio_venta);
-                    cmd.Parameters.AddWithValue("@cant", emp.Cantidad);
+                    cmd.Parameters.AddWithValue("@id", snack.Id);
+                    cmd.Parameters.AddWithValue("@pro", snack.Producto);
+                    cmd.Parameters.AddWithValue("@mar", snack.Marca);
+                    cmd.Parameters.AddWithValue("@precio_compra", snack.Precio_compra);
+                    cmd.Parameters.AddWithValue("@precio_venta", snack.Precio_venta);
+                    cmd.Parameters.AddWithValue("@cant", snack.Cantidad);
                     cmd.ExecuteNonQuery();
                     Con.Close();
 
@@ -93,7 +93,7 @@ namespace Parcial_II___Grupo_5.DAL
             }
         }
 
-        public bool deleteSnack(SnacksBLL emp)
+        public bool deleteSnack(SnacksBLL snack)
         {
             try
             {
@@ -102,7 +102,7 @@ namespace Parcial_II___Grupo_5.DAL
                 {
                     Con.Open();
                     cmd.CommandText = "DELETE FROM Snacks WHERE id = @id;";
-                    cmd.Parameters.AddWithValue("@id", emp.Id);
+                    cmd.Parameters.AddWithValue("@id", snack.Id);
                     cmd.ExecuteNonQuery();
                     Con.Close();
 
