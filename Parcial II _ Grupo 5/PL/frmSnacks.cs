@@ -107,13 +107,13 @@ namespace Parcial_II___Grupo_5.PL
                 SnacksDAL create = new SnacksDAL();
                 if (create.updateSnack(snack))
                 {
-                    MessageBox.Show("Sede actualizada con éxito");
+                    MessageBox.Show("Los datos fueron actualizados con éxito");
                     fillDgvSnacks();
                     clearTextBox();
                 }
                 else
                 {
-                    MessageBox.Show("No se pudo actualizar la sede");
+                    MessageBox.Show("No se pudo actualizar");
                 }
             }
         }
