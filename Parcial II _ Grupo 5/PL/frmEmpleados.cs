@@ -15,6 +15,7 @@ namespace Parcial_II___Grupo_5.PL
     public partial class frmEmpleados : Form
     {
         EmpleadosDAL empleados;
+        
         public frmEmpleados()
         {
             InitializeComponent();
@@ -26,7 +27,7 @@ namespace Parcial_II___Grupo_5.PL
         }
         private void fillDgvEmpleados()
         {
-            DgvEmpleados.DataSource = empleados.getAllEmpleados();
+            dgvEmpleados.DataSource = empleados.getAllEmpleados();
         }
         private void clearTextBox()
         {
@@ -49,8 +50,8 @@ namespace Parcial_II___Grupo_5.PL
                 string apellidos = txtApellidos.Text;
                 string cargo = txtCargo.Text;
                 string telefono = txtTelefono.Text;
-                EmpleadosBLL empleados = new EmpleadosBLL(0, nombre, apellidos, cargo, telefono);
-                if (empleados.createEmpleados(emp))
+                EmpleadosBLL emp= new EmpleadosBLL(0, nombre, apellidos, cargo, telefono);
+                if (empleados.createEmpleado(emp))
                 {
                     MessageBox.Show("Empleado registrado con éxito");
                     fillDgvEmpleados();
@@ -92,9 +93,9 @@ namespace Parcial_II___Grupo_5.PL
                 string apellidos = txtApellidos.Text;
                 string cargo = txtCargo.Text;
                 string telefono = txtTelefono.Text;
-                EmpleadosBLL empleados = new EmpleadosBLL(id, nombres, cargo, telefono);
+                EmpleadosBLL emp = new EmpleadosBLL(id, nombres, apellidos, cargo, telefono);
                 EmpleadosDAL create = new EmpleadosDAL();
-                if (create.updateEmpleados(empleados))
+                if (create.updateEmpleado(emp))
                 {
                     MessageBox.Show("Empleados actualizados con éxito");
                     fillDgvEmpleados();
@@ -117,11 +118,11 @@ namespace Parcial_II___Grupo_5.PL
             else
             {
                 int id = int.Parse(txtId.Text);
-                EmpleadosBLL empleados = new EmpleadosBLL(id);
+                EmpleadosBLL emp = new EmpleadosBLL(id);
                 var confirm = MessageBox.Show("¿Estás seguro de eliminar esta sede?", "Confirmar", MessageBoxButtons.YesNo);
                 if (confirm == DialogResult.Yes)
                 {
-                    if (empleados.deleteEmpleados(empleados))
+                    if (empleados.deleteEmpleado(emp))
                     {
                         MessageBox.Show("Sede eliminada con éxito");
                         fillDgvEmpleados();

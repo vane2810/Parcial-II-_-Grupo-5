@@ -39,12 +39,12 @@ namespace Parcial_II___Grupo_5.PL
             this.txtApellidos = new System.Windows.Forms.TextBox();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.txtCargo = new System.Windows.Forms.TextBox();
-            this.btnInsertar = new System.Windows.Forms.Button();
-            this.btnActualizar = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.btnCerrar = new System.Windows.Forms.Button();
-            this.DgvEmpleados = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvEmpleados)).BeginInit();
+            this.btnInsert = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.dgvEmpleados = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl1
@@ -129,54 +129,54 @@ namespace Parcial_II___Grupo_5.PL
             this.txtCargo.Size = new System.Drawing.Size(203, 20);
             this.txtCargo.TabIndex = 9;
             // 
-            // btnInsertar
+            // btnInsert
             // 
-            this.btnInsertar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnInsertar.Location = new System.Drawing.Point(30, 266);
-            this.btnInsertar.Name = "btnInsertar";
-            this.btnInsertar.Size = new System.Drawing.Size(75, 23);
-            this.btnInsertar.TabIndex = 10;
-            this.btnInsertar.Text = "Insertar";
-            this.btnInsertar.UseVisualStyleBackColor = false;
+            this.btnInsert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnInsert.Location = new System.Drawing.Point(30, 266);
+            this.btnInsert.Name = "btnInsert";
+            this.btnInsert.Size = new System.Drawing.Size(75, 23);
+            this.btnInsert.TabIndex = 10;
+            this.btnInsert.Text = "Insertar";
+            this.btnInsert.UseVisualStyleBackColor = false;
             // 
-            // btnActualizar
+            // btnUpdate
             // 
-            this.btnActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnActualizar.Location = new System.Drawing.Point(147, 266);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
-            this.btnActualizar.TabIndex = 11;
-            this.btnActualizar.Text = "Actualizar";
-            this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnUpdate.Location = new System.Drawing.Point(147, 266);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 11;
+            this.btnUpdate.Text = "Actualizar";
+            this.btnUpdate.UseVisualStyleBackColor = false;
             // 
-            // btnEliminar
+            // btnDelete
             // 
-            this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnEliminar.Location = new System.Drawing.Point(263, 266);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
-            this.btnEliminar.TabIndex = 12;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnDelete.Location = new System.Drawing.Point(263, 266);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 12;
+            this.btnDelete.Text = "Eliminar";
+            this.btnDelete.UseVisualStyleBackColor = false;
             // 
-            // btnCerrar
+            // btnClose
             // 
-            this.btnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnCerrar.Location = new System.Drawing.Point(379, 266);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(75, 23);
-            this.btnCerrar.TabIndex = 13;
-            this.btnCerrar.Text = "Cerrar";
-            this.btnCerrar.UseVisualStyleBackColor = false;
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnClose.Location = new System.Drawing.Point(379, 266);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(75, 23);
+            this.btnClose.TabIndex = 13;
+            this.btnClose.Text = "Cerrar";
+            this.btnClose.UseVisualStyleBackColor = false;
             // 
-            // DgvEmpleados
+            // dgvEmpleados
             // 
-            this.DgvEmpleados.BackgroundColor = System.Drawing.Color.SeaShell;
-            this.DgvEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvEmpleados.Location = new System.Drawing.Point(30, 305);
-            this.DgvEmpleados.Name = "DgvEmpleados";
-            this.DgvEmpleados.Size = new System.Drawing.Size(424, 218);
-            this.DgvEmpleados.TabIndex = 14;
+            this.dgvEmpleados.BackgroundColor = System.Drawing.Color.SeaShell;
+            this.dgvEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEmpleados.Location = new System.Drawing.Point(30, 305);
+            this.dgvEmpleados.Name = "dgvEmpleados";
+            this.dgvEmpleados.Size = new System.Drawing.Size(424, 218);
+            this.dgvEmpleados.TabIndex = 14;
             // 
             // frmEmpleados
             // 
@@ -184,11 +184,11 @@ namespace Parcial_II___Grupo_5.PL
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(475, 535);
-            this.Controls.Add(this.DgvEmpleados);
-            this.Controls.Add(this.btnCerrar);
-            this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.btnActualizar);
-            this.Controls.Add(this.btnInsertar);
+            this.Controls.Add(this.dgvEmpleados);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnInsert);
             this.Controls.Add(this.txtCargo);
             this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.txtApellidos);
@@ -202,7 +202,7 @@ namespace Parcial_II___Grupo_5.PL
             this.Name = "frmEmpleados";
             this.Text = "frmEmpleados";
             this.Load += new System.EventHandler(this.frmEmpleados_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.DgvEmpleados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -220,10 +220,10 @@ namespace Parcial_II___Grupo_5.PL
         private System.Windows.Forms.TextBox txtApellidos;
         private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.TextBox txtCargo;
-        private System.Windows.Forms.Button btnInsertar;
-        private System.Windows.Forms.Button btnActualizar;
-        private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.DataGridView DgvEmpleados;
+        private System.Windows.Forms.Button btnInsert;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.DataGridView dgvEmpleados;
     }
 }

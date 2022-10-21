@@ -52,8 +52,8 @@ namespace Parcial_II___Grupo_5.PL
             {
                 string producto = txtProducto.Text;
                 string marca = txtMarca.Text;
-                double precio_compra = Convert.ToInt32(txtCompra.Text);
-                double precio_venta = Convert.ToInt32(txtVenta.Text);
+                double precio_compra = double.Parse(txtCompra.Text);
+                double precio_venta = double.Parse(txtVenta.Text);
                 int cantidad = int.Parse(txtCantidad.Text);
                 SnacksBLL snack = new SnacksBLL(0, producto, marca, precio_compra, precio_venta, cantidad);
                 if (snacks.createSnack(snack))
@@ -100,8 +100,8 @@ namespace Parcial_II___Grupo_5.PL
                 int id = int.Parse(txtId.Text);
                 string producto = txtProducto.Text;
                 string marca = txtMarca.Text;
-                double precio_compra = Convert.ToInt32(txtCompra.Text);
-                double precio_venta = Convert.ToInt32(txtVenta.Text);
+                double precio_compra = double.Parse(txtCompra.Text);
+                double precio_venta = double.Parse(txtVenta.Text);
                 int cantidad = int.Parse(txtCantidad.Text);
                 SnacksBLL snack = new SnacksBLL(id, producto, marca, precio_compra, precio_venta, cantidad);
                 SnacksDAL create = new SnacksDAL();

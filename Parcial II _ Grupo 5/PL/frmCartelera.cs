@@ -52,9 +52,9 @@ namespace Parcial_II___Grupo_5.PL
             {
                 string nombre_pelicula = txtNombre_pelicula.Text;
                 string periodo_pelicula = txtPeriodo_pelicula.Text;
-                double ganancias_funcion = Convert.ToInt32(txtGanancias_funcion.Text);
-                double ganancias_diarias = Convert.ToInt32(txtGanancias_diarias.Text);
-                double ganancias_totales = Convert.ToInt32(txtGanancias_totales.Text);
+                double ganancias_funcion = double.Parse(txtGanancias_funcion.Text);
+                double ganancias_diarias = double.Parse(txtGanancias_diarias.Text);
+                double ganancias_totales = double.Parse(txtGanancias_totales.Text);
                 CarteleraBLL carteleras = new CarteleraBLL(0, nombre_pelicula, periodo_pelicula, ganancias_funcion, ganancias_diarias, ganancias_totales);
                 if (cartelera.createCarteleras(carteleras))
                 {
@@ -101,9 +101,9 @@ namespace Parcial_II___Grupo_5.PL
                 int id = int.Parse(txtId_funcion.Text);
                 string nombre_pelicula = txtNombre_pelicula.Text;
                 string periodo_pelicula = txtPeriodo_pelicula.Text;
-                double ganancias_funcion = Convert.ToInt32(txtGanancias_funcion.Text);
-                double ganancias_diarias = Convert.ToInt32(txtGanancias_diarias.Text);
-                double ganancias_totales = Convert.ToInt32(txtGanancias_totales.Text);
+                double ganancias_funcion = double.Parse(txtGanancias_funcion.Text);
+                double ganancias_diarias = double.Parse(txtGanancias_diarias.Text);
+                double ganancias_totales = double.Parse(txtGanancias_totales.Text);
                 CarteleraBLL carteleras = new CarteleraBLL(id, nombre_pelicula, periodo_pelicula, ganancias_funcion, ganancias_diarias, ganancias_totales);
                 CarteleraDAL create = new CarteleraDAL();
                 if (create.updateCarteleras(carteleras))
